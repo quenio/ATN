@@ -48,3 +48,11 @@ Point :: Latitude * Longitude
 A product type is a binary relation between two types. Its instances are all pairwise combinations of all instances of the constituent types.
 
 Normally, instances are represented as tuples, such as `(1, 2)`, where `1` is an instance of `Latitude` and `2` is an instance of `Longitude`.
+
+A type may be defined by the product of multiple types. For example:
+
+```haskell
+Box :: Height :: Width :: Length
+```haskell
+
+In which case, the instances would be tuples of the 3 constituent types, such as `(1, 2, 3)`.
