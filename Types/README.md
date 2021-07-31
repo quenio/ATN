@@ -40,7 +40,7 @@ Aliases are normally used for abbreviations or synonyms.
 
 ## Set Type
 
-A type may be defined for instances that are themselves a set containing elements, which are instances of another type:
+A type may be defined for instances that are themselves a set containing other elements, which are in turn instances of another type:
 
 ```haskell
 Album :: {Photo}
