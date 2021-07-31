@@ -8,7 +8,7 @@ It aims at keeping the specifications at a sufficiently abstract level, so that 
 
 ## Types
 
-In ATN, a type is a set that integrates its elements (a.k.a. instances) into a named [concept](https://en.wikipedia.org/wiki/Concept).
+In ATN, a type is a [set](https://en.wikipedia.org/wiki/Set) that integrates its elements (a.k.a. instances) into a named [concept](https://en.wikipedia.org/wiki/Concept).
 
 Learn more about [types](./Types).
 
