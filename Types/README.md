@@ -49,7 +49,7 @@ A product type is a [binary relation](https://en.wikipedia.org/wiki/Binary_relat
 
 Normally, instances are represented as pairs, such as `(1, 2)`, where `1` is an instance of `Latitude` and `2` is an instance of `Longitude`.
 
-A type may be defined by the product of multiple types. For example:
+A type may be also defined by the product of multiple types. For example:
 
 ```haskell
 Box :: Height * Width * Length
