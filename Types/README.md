@@ -48,7 +48,7 @@ Album :: {Photo}
 
 In the example above, an instance of `Album` is a set containing instances of `Photo`.
 
-A set type, as defined in ATN, is equivalent to the concept of [powerset](https://en.wikipedia.org/wiki/Power_set) in set theory.
+A set type, as defined in ATN, is equivalent to the concept of [powerset](https://en.wikipedia.org/wiki/Power_set) in set theory, where the instances of the set type are subsets containing elements of the enclosed type.
 
 ## Product Type
 
