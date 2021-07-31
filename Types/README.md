@@ -24,3 +24,13 @@ RationalNumber: Number
 That means all instances of the sub-type are also instances of the super-type.
 
 The super-type may have instances that are not instances of the sub-type.
+
+## Type Alias
+
+A type may have one or more aliases:
+
+```haskell
+World :: OuttermostEnvironment :: Environment :: Env
+```
+
+Within the current context, each alias may be used independently to refer to the same type.
