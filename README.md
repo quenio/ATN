@@ -20,7 +20,7 @@ In the whole context where such a constant is defined, its name always refers to
 
 ## Assertions
 
-In ATN, an assertion is a named expression that should always evaluate to being true in the whole context where it is defined.
+In ATN, an assertion is a named expression that should always evaluate to being true whitin the context where it is defined.
 
 In other words, assertions claim the truth of the proposition they define.
 
