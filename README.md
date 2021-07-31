@@ -14,8 +14,12 @@ In ATN, a type is a set that integrates its elements (a.k.a. instances) into a n
 
 In ATN, a constant refers to a specific instance of a type. 
 
-The same instance is always referred by the name of a constant throughout the context where such a constant is defined.
+The same instance is always referred by the name of a constant in the whole context where such a constant is defined.
 
 ## Assertions
+
+In ATN, assertions are expressions that should always evaluate to being true in the whole context where they have were defined.
+
+In other words, assertions claim the truth of the proposition they define.
 
 ## Contexts
