@@ -57,3 +57,19 @@ Box :: Height * Width * Length
 ```
 
 In which case, the instances would be tuples composed by the instances of the constituent types, such as `(1, 2, 3)`.
+
+## Type Union
+
+A type may be defined as the union of two other types:
+
+```haskell
+RealNumber :: RationalNumber | IrrationalNumber
+```
+
+That means all instances of the union-type are also an instance of one of the constituent types. For example, an instance of `RealNumber` is either an instance of `RationalNumber` or an instance of `IrrationalNumber`.
+
+Note that, in the example above, even though the intersection of the constituent type is an empty set, that may not always be the case. In example below, the intersection of `IntegerNumber` and `RationalNumber` is not an empty set:
+
+```haskell
+SomeNumber :: IntegerNumber | RationalNumber
+```haskell
