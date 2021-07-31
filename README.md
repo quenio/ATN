@@ -4,7 +4,7 @@ ATN is a [notation](https://en.wikipedia.org/wiki/Notation) to write [specificat
 
 It is _not_ intended to write [programs](https://en.wikipedia.org/wiki/Computer_program) or [algorithms](https://en.wikipedia.org/wiki/Algorithm). Instead, ATN provides a declarative syntax and supporting semantics (based on [type theory](https://en.wikipedia.org/wiki/Type_theory), [lambda calculus](https://en.wikipedia.org/wiki/Lambda_calculus) and [predicate logic](https://en.wikipedia.org/wiki/Higher-order_logic)) that are well-suited to write specifications.
 
-It aims at keeping specifications at a sufficient level of [abstraction](https://en.wikipedia.org/wiki/Abstraction), so that implementation-specific concerns do not obfuscate the clarity and the objectivity necessary in specifications.
+It aims at keeping specifications at a sufficient level of [abstraction](https://en.wikipedia.org/wiki/Abstraction), so that [implementation](https://en.wikipedia.org/wiki/Implementation)-specific concerns do not obfuscate the clarity and the [objectivity](https://en.wikipedia.org/wiki/Objectivity_(philosophy)) necessary in specifications.
 
 Multiple specifications can be organized in separate [contexts](#Contexts).
 
