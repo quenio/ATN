@@ -53,6 +53,6 @@ A type may be defined by the product of multiple types. For example:
 
 ```haskell
 Box :: Height :: Width :: Length
-```haskell
+```
 
 In which case, the instances would be tuples of the 3 constituent types, such as `(1, 2, 3)`.
