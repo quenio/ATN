@@ -90,8 +90,10 @@ String :: Natural -> Character
 
 In the example above, `String` is defined as the set of all functions that have `Natural` as domain and `Character` as the range.
 
-Observe that function types allow ATN specifications to use [functions as values](https://en.wikipedia.org/wiki/Higher-order_function). That is, as arguments and results in the application of other functions, such as [map](https://en.wikipedia.org/wiki/Map_(higher-order_function)), [filter](https://en.wikipedia.org/wiki/Filter_(higher-order_function)) and [fold](https://en.wikipedia.org/wiki/Fold_(higher-order_function)):
+Observe that function types allow ATN specifications to use [functions as values](https://en.wikipedia.org/wiki/Higher-order_function). That is, as arguments and results in the application of other functions, such as [map](https://en.wikipedia.org/wiki/Map_(higher-order_function)), [filter](https://en.wikipedia.org/wiki/Filter_(higher-order_function)) and [fold](https://en.wikipedia.org/wiki/Fold_(higher-order_function)). For example:
 
 ```haskell
-StringMap :: String * [Natural] -> [Character]
+StringMap :: String * [Natural] -> String
 ```
+
+Above, the instance of `String` can be used as a function that will allow a `StringMap` instance to map a sequence of natural numbers to another `String`. (This is the basic principle of cryptography.)
