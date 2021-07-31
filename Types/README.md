@@ -22,3 +22,5 @@ RationalNumber: Number
 ```
 
 That means all instances of the sub-type are also instances of the super-type.
+
+The super-type may have instances that are not instances of the sub-type.
