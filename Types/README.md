@@ -72,4 +72,4 @@ Note that, in the example above, even though the intersection of the constituent
 
 ```haskell
 SomeNumber :: IntegerNumber | RationalNumber
-```haskell
+```
