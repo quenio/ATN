@@ -73,3 +73,9 @@ Note that, in the example above, the intersection of the constituent types is an
 ```haskell
 SomeNumber :: IntegerNumber | RationalNumber
 ```
+
+A type may also be defined by the union of multiple types. For example:
+
+```haskell
+Animal :: Mammal | Bird | Reptile | Amphibian | Fish | Invertebrate
+```
