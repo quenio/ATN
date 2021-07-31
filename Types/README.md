@@ -50,6 +50,18 @@ In the example above, an instance of `Album` is a set containing instances of `P
 
 A set type, as defined in ATN, is equivalent to the concept of [powerset](https://en.wikipedia.org/wiki/Power_set) in set theory, where the instances of the set type are subsets containing elements of the enclosed type.
 
+## Sequence Type
+
+A type may be defined for instances that are sequences containing (possibly repeated) elements of another type:
+
+```haskell
+String :: [Character]
+```
+
+In the example above, instances of `String` are sequences of `Character` instances.
+
+Notice that a sequence type contains as its instances the sequences of any length, including infinite sequences.
+
 ## Product Type
 
 A type may be defined as a product of two other types:
