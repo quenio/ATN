@@ -26,7 +26,7 @@ In other words, assertions claim the truth of the proposition they define.
 
 ## Contexts
 
-In ATN, the context is where types, constants and assertions are defined.
+In ATN, a context is where types, constants and assertions are defined.
 
 A context cannot have any contradictions among its definitions.
 
