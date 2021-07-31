@@ -8,7 +8,13 @@ It aims at keeping the specifications at a sufficiently abstract level, so that 
 
 ## Types
 
+In ATN, a type is a set that integrates its elements (a.k.a. instances) into a named concept.
+
 ## Constants
+
+In ATN, a constant refers to a specific instance of a type. 
+
+The same instance is always referred by the name of a constant throughout the context where such a constant is defined.
 
 ## Assertions
 
