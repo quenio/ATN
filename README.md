@@ -23,3 +23,7 @@ In ATN, assertions are expressions that should always evaluate to being true in 
 In other words, assertions claim the truth of the proposition they define.
 
 ## Contexts
+
+In ATN, the context is where types, constants and assertions are defined.
+
+A sub-context can be embedded in a super-context, in which case all the definitions of the super-context are known by the sub-context, but not the other way around.
