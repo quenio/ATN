@@ -28,6 +28,6 @@ In ATN, the context is where types, constants and assertions are defined.
 
 A context cannot have any contradictions among its definitions.
 
-An inner-context can be embedded in an outer-context, in which case all the definitions of the outer-context are known by the inner-context, but not the other way around. 
+An inner-context can be embedded in an outer-context, in which case all the definitions of the outer-context are known by the inner-context, but not the other way around. There cannot be any contradictions between the inner-context and the outer-context.
 
 An inner-context can be embedded in many outer-contexts as long as all contexts do not have contradictions among themselves.
