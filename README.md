@@ -6,8 +6,6 @@ It is not intended to write programs. On the contrary, it provides a declarative
 
 It aims at keeping the specifications at a sufficiently abstract level, so that implementation-specific concerns do not obfuscate the clarity and the objectivity necessary in specifications.
 
-Note: every statement in this text should be considered normative.
-
 ## Types
 
 In ATN, a type is a set that integrates its elements (a.k.a. instances) into a named concept.
