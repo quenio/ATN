@@ -55,4 +55,4 @@ A type may be also defined by the product of multiple types. For example:
 Box :: Height * Width * Length
 ```
 
-In which case, the instances would be tuples of the 3 constituent types, such as `(1, 2, 3)`.
+In which case, the instances would be tuples composed by the instances of the 3 constituent types, such as `(1, 2, 3)`.
