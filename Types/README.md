@@ -11,7 +11,7 @@ A type is declared as one or more words, each with its first letter capitalized,
 RationalNumber
 ```
 
-As shown above, just the name of the type is suffcient to have it known in the current context. No definition is required.
+As shown above, just writing the name of the type is enough to have it known in the current context. No definition is required.
 
 ## Type Hierarchy
 
