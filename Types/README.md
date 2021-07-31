@@ -38,6 +38,18 @@ Within the current context, each alias may be used independently to refer to the
 
 Aliases are normally used for abbreviations or synonyms.
 
+## Set Type
+
+A type may be defined for instances that are themselves a set containing elements, which are instances of another type:
+
+```haskell
+Album :: {Photo}
+```
+
+In the example above, an instance of `Album` is a set containing instances of `Photo`.
+
+A set type, as defined in ATN, is equivalent to the concept of [powerset](https://en.wikipedia.org/wiki/Power_set) in set theory.
+
 ## Product Type
 
 A type may be defined as a product of two other types:
