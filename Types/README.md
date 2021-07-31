@@ -47,4 +47,4 @@ Point :: Latitude * Longitude
 
 A product type is a binary relation between two types. Its instances are all pairwise combinations of all instances of the constituent types.
 
-Normally, instances are represented as tuples, such as `(1, 2)`, where `1` is an instance of `Latitude` and `2` is an instande of `Longitude`.
+Normally, instances are represented as tuples, such as `(1, 2)`, where `1` is an instance of `Latitude` and `2` is an instance of `Longitude`.
