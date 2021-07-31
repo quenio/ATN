@@ -38,7 +38,7 @@ Within the current context, each alias may be used independently to refer to the
 
 Aliases are normally used for abbreviations or synonyms.
 
-## Type Product
+## Product Type
 
 A type may be defined as a product of two other types:
 
@@ -58,7 +58,7 @@ Box :: Height * Width * Length
 
 In which case, the instances would be tuples composed by the instances of the constituent types, such as `(1, 2, 3)`.
 
-## Type Union
+## Union Type
 
 A type may be defined as the union of two other types:
 
@@ -78,4 +78,20 @@ A type may also be defined by the union of multiple types. For example:
 
 ```haskell
 Animal :: Mammal | Bird | Reptile | Amphibian | Fish | Invertebrate
+```
+
+## Function Type
+
+A type may be define for functions:
+
+```haskell
+String :: Natural -> Character
+```
+
+In the example above, `String` is defined as the set of all functions that have `Natural` as domain and `Character` as the range.
+
+Observe that function types allow ATN to refer to [functions as values](https://en.wikipedia.org/wiki/Higher-order_function). That is, as arguments and results in the application of other functions, such as [map](https://en.wikipedia.org/wiki/Map_(higher-order_function)), [filter](https://en.wikipedia.org/wiki/Filter_(higher-order_function)) and [fold](https://en.wikipedia.org/wiki/Fold_(higher-order_function)):
+
+```haskell
+StringMap :: String * [Integer] -> [Character]
 ```
