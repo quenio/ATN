@@ -19,11 +19,12 @@ A type can be declared as a sub-type of a super-type:
 
 ```haskell
 RationalNumber: Number
+IrrationalNumber: Number
 ```
 
-That means all instances of the sub-type are also instances of the super-type.
+That means all instances of the sub-type are also instances of the super-type. In the example above, all instances of `RationalNumer` are also instances of `Number`.
 
-The super-type may have instances that are not instances of the sub-type.
+The super-type may have instances that are not instances of the sub-type. For example, not all instances of `Number` are instances of `RationalNumer`, as it is the case with the instances of `IrrationalNumber`.
 
 ## Type Alias
 
