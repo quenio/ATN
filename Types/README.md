@@ -106,7 +106,7 @@ Animal :: Mammal | Bird | Reptile | Amphibian | Fish | Invertebrate
 
 ## Function Type
 
-A type may be define for functions:
+A type may be defined for functions. For example:
 
 ```haskell
 String :: Natural -> Character
