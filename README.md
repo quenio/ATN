@@ -18,7 +18,7 @@ The same instance is always referred by the same name in the whole context where
 
 ## Assertions
 
-In ATN, assertions are expressions that should always evaluate to being true in the whole context where they have were defined.
+In ATN, assertions are expressions that should always evaluate to being true in the whole context where they are defined.
 
 In other words, assertions claim the truth of the proposition they define.
 
