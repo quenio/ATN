@@ -1,8 +1,8 @@
 # Abstract Type Notation (ATN)
 
-ATN is a notation to write specifications via the definition of types, constants and assertions.
+ATN is a [notation](https://en.wikipedia.org/wiki/Notation) to write [specifications](https://en.wikipedia.org/wiki/Specification_(technical_standard)) via the definition of [types](#Types), [constants](#Constants) and [assertions](#Assertions).
 
-It is not intended to write programs. Instead, it provides a declarative syntax, and semantics based on type theory, lambda calculus and predicate logic, that is well-suited to write specifications.
+It is not intended to write programs. Instead, it provides a declarative syntax and supporting semantics (based on type theory, lambda calculus and predicate logic) that are well-suited to write specifications.
 
 It aims at keeping the specifications at a sufficiently abstract level, so that implementation-specific concerns do not obfuscate the clarity and the objectivity necessary in specifications.
 
