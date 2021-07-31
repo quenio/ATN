@@ -14,7 +14,7 @@ In ATN, a type is a set that integrates its elements (a.k.a. instances) into a n
 
 In ATN, a constant refers to a specific instance of a type. 
 
-The same instance is always referred by the same name in the whole context where such a constant is defined.
+In the whole context where such a constant is defined, its name always refers to the same instance.
 
 ## Assertions
 
