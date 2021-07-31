@@ -52,7 +52,7 @@ Normally, instances are represented as tuples, such as `(1, 2)`, where `1` is an
 A type may be defined by the product of multiple types. For example:
 
 ```haskell
-Box :: Height :: Width :: Length
+Box :: Height * Width * Length
 ```
 
 In which case, the instances would be tuples of the 3 constituent types, such as `(1, 2, 3)`.
