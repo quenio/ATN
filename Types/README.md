@@ -93,5 +93,5 @@ In the example above, `String` is defined as the set of all functions that have 
 Observe that function types allow ATN to refer to [functions as values](https://en.wikipedia.org/wiki/Higher-order_function). That is, as arguments and results in the application of other functions, such as [map](https://en.wikipedia.org/wiki/Map_(higher-order_function)), [filter](https://en.wikipedia.org/wiki/Filter_(higher-order_function)) and [fold](https://en.wikipedia.org/wiki/Fold_(higher-order_function)):
 
 ```haskell
-StringMap :: String * [Integer] -> [Character]
+StringMap :: String * [Natural] -> [Character]
 ```
