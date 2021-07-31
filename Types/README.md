@@ -128,4 +128,4 @@ In ATN, sequence types are equivalent to function types having `Natural` as the 
 String :: [Character] :: Natural -> Character
 ```
 
-Above, both definitions of `String` are equivalent.
+Above, both definitions of `String` are equivalent. That is only true because `Character` is the enclosing type of the sequence type and also the codomain of the function type.
