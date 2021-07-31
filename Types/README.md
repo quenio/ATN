@@ -4,7 +4,7 @@ In ATN, a type is a set that integrates its elements (a.k.a. instances) into a n
 
 ## Type Declaration
 
-A type is declared as one or more words, each with its first letter capitalized, all bound together:
+A type is declared as one or more words, each with its first letter capitalized, all joined without spaces between them:
 
 
 ```haskell
