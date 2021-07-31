@@ -12,3 +12,13 @@ RationalNumber
 ```
 
 As shown above, just the name of the type is suffcient to have it known in the current context. No definition is required.
+
+## Type Hierarchy
+
+A type can be declared as a sub-type of a super-type:
+
+```haskell
+RationalNumber: Number
+```
+
+That means all instances of the sub-type are also instances of the super-type.
