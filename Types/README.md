@@ -1,6 +1,6 @@
 # ATN: Types
 
-In ATN, a type is a [set](https://en.wikipedia.org/wiki/Set) that integrates its elements (a.k.a. instances) into a named [concept](https://en.wikipedia.org/wiki/Concept).
+In ATN, a type is a [set](https://en.wikipedia.org/wiki/Set_(mathematics)) that integrates its elements (a.k.a. instances) into a named [concept](https://en.wikipedia.org/wiki/Concept).
 
 ## Type Declaration
 
