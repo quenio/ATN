@@ -8,10 +8,10 @@ A type is declared as one or more words, each with its first letter capitalized,
 
 
 ```haskell
-RationalNumber
+RationalNumber -- A number that can be expressed as the quotient of two integers.
 ```
 
-As shown above, just writing the name of the type is enough to have it known in the current context. No definition is required.
+Just writing the name of the type is enough to have it known in the current context. No definition is required.
 
 ## Type Hierarchy
 
