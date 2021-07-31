@@ -6,6 +6,8 @@ It is _not_ intended to write [programs](https://en.wikipedia.org/wiki/Computer_
 
 It aims at keeping specifications at a sufficiently abstract level, so that implementation-specific concerns do not obfuscate the clarity and the objectivity necessary in specifications.
 
+Multiple specifications can be organized in separate [contexts](#Contexts).
+
 ## Types
 
 In ATN, a type is a [set](https://en.wikipedia.org/wiki/Set_(mathematics)) that integrates its elements (a.k.a. instances) into a named [concept](https://en.wikipedia.org/wiki/Concept).
