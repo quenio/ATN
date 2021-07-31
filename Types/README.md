@@ -34,3 +34,5 @@ World :: OuttermostEnvironment :: Environment :: Env
 ```
 
 Within the current context, each alias may be used independently to refer to the same type.
+
+Aliases are normally used for abbreviations or synonyms.
