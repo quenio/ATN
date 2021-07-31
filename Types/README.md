@@ -121,3 +121,11 @@ StringMap :: String * [Natural] -> String
 ```
 
 Above, the instance of `String` can be used as a function that will allow a `StringMap` instance to map a sequence of natural numbers to another `String`. (This is the basic principle of cryptography.)
+
+In ATN, sequence types are equivalent to function types having `Natural` as the domain:
+
+```haskell
+String :: [Character] :: Natural -> Character
+```
+
+Above, both definitions of `String` are equivalent.
