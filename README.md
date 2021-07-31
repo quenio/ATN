@@ -2,15 +2,17 @@
 
 ## Types
 
-### Type Definition
+### Type Definitions
 
-### Type Hierarchy
+### Type Hierarchies
+
+### Type Parameters
 
 ## Constants & Variables
 
 ### Constants vs Variables
 
-### Constant / Variable Definition
+### Constant / Variable Definitions
 
 ## Advanced Definitions
 
