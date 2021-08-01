@@ -12,3 +12,13 @@ total_amount -- The total amount to be paid.
 ```
 
 Just writing the name of the constant is enough to have it known in the current context. No definition is required.
+
+## Type Definition
+
+A constant may have its type defined as follows:
+
+```haskell
+total: Amount
+```
+
+That means the constant named `total` refers to an instance of `Amount`.
