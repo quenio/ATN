@@ -8,25 +8,27 @@ It aims at keeping specifications at a sufficient level of [abstraction](https:/
 
 Multiple specifications can be organized in separate [contexts](#Contexts).
 
-## Types
+## Definitions
+
+### Types
 
 In ATN, a type is a [set](https://en.wikipedia.org/wiki/Set_(mathematics)) that integrates its elements (a.k.a. instances) into a named [concept](https://en.wikipedia.org/wiki/Concept).
 
 Learn more about [types](./Types).
 
-## Constants
+### Constants
 
 In ATN, a constant refers to a specific instance of a type. 
 
 In the whole context where such a constant is defined, its name always refers to the same instance.
 
-## Assertions
+### Assertions
 
 In ATN, an assertion is a named expression that should always evaluate to being true within the context where it is defined.
 
 In other words, assertions claim the truth of the proposition they define.
 
-## Contexts
+### Contexts
 
 In ATN, a context is where types, constants and assertions are defined.
 
@@ -37,3 +39,9 @@ An inner-context can be embedded in an outer-context, in which case all the defi
 An inner-context may be embedded in many outer-contexts as long as all involved contexts do not have contradictions among themselves.
 
 All contexts of any specifications defined in ATN are automatically embbeded in ATN's outermost context (named `world`), which defines core types, such as `Boolean`, `Character`, `String`, `Natural`, `Real`, among others. That means no specifications can contradict the definitions of ATN's world.
+
+## Examples
+
+ATN can be used to specify anything, from programs to processes, or from theories to physical systems. Anything that can be integrated into concepts of the mind can be specified in ATN.
+
+Below, some examples are shown that demonstrate the expressive power of ATN in specifications.
