@@ -50,7 +50,9 @@ SUM_OF_3_NUMBERS: sum([1, 2, 3]) = 6
 Normally though, they involve variables and are more generic, such as:
 
 ```haskell
-SUM_OF_3_NUMBERS: all a, b, c in Number: sum([a, b, c]) = a + b + c
+SUM_OF_3_NUMBERS: 
+  all a, b, c in Number:
+    sum([a, b, c]) = a + b + c
 ```
 
 See more about assertions [here](../Assertions).
