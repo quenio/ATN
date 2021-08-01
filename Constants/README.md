@@ -32,3 +32,11 @@ city_center: Latitude * Longitude -- The city's center is a pair consisting of a
 ```
 
 ## Function Definition
+
+Since ATN allows the definition of [function types](https://en.wikipedia.org/wiki/Function_type), as shown in [types](../Types), a constant can be used to define a specific function, as shown in the following example:
+
+```haskell
+sum: [Amount] -> Amount
+```
+
+Observe that, in the example above, and generally in ATN specifications, the function definition does _not_ describe how the function should be implemented. [Assertions](../Assertions), however, allow ATN to specify the expected behavior of a function in different situations.
