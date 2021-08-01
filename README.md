@@ -30,7 +30,7 @@ In other words, assertions claim the truth of the proposition they define.
 
 In ATN, a context is where types, constants and assertions are defined.
 
-No context should have contradictions among its definitions.
+No context should have [contradictions](https://en.wikipedia.org/wiki/Contradiction) among its definitions.
 
 An inner-context can be embedded in an outer-context, in which case all the definitions known by the outer-context are also known by the inner-context, but not the other way around. There should not be any contradictions between the inner-context and the outer-context.
 
