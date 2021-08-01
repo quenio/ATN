@@ -39,4 +39,18 @@ Since ATN allows the definition of [function types](https://en.wikipedia.org/wik
 sum: [Amount] -> Amount
 ```
 
-Observe that, in the example above, and generally in ATN specifications, the function definition does _not_ describe how the function should be implemented. [Assertions](../Assertions), however, allow ATN to specify the expected behavior of a function in different situations.
+Observe that, in the example above, and generally in ATN specifications, the function definition does _not_ describe how the function should be implemented. [Assertions](../Assertions), however, allow ATN to specify the expected behavior of a function in different situations. 
+
+An assertion that specifies the behavior of `sum` can be as simple as:
+
+```haskell
+SUM_OF_3_NUMBERS: sum([1, 2, 3]) = 6
+```
+
+Normally though, they involve variables and are more generic, such as:
+
+```haskell
+SUM_OF_3_NUMBERS: all a, b, c in Number: sum([a, b, c]) = a + b + c
+```
+
+See more about assertions [here](../Assertions).
