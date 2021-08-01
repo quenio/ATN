@@ -30,6 +30,8 @@ In ATN, an assertion is a named expression that should always evaluate to being 
 
 In other words, assertions claim the truth of the proposition they define.
 
+Learn more about [assertions](./Assertions).
+
 ### Contexts
 
 In ATN, a context is where types, constants and assertions are defined.
