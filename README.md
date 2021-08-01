@@ -35,3 +35,5 @@ No context should have contradictions among its definitions.
 An inner-context can be embedded in an outer-context, in which case all the definitions known by the outer-context are also known by the inner-context, but not the other way around. There should not be any contradictions between the inner-context and the outer-context.
 
 An inner-context may be embedded in many outer-contexts as long as all involved contexts do not have contradictions among themselves.
+
+All contexts of any specifcation defined in ATN are automatically embbeded in ATN's outermost context (named `world`), which defines core types, such as `Boolean`, `Character`, `String`, `Natural`, `Real`, among others. That means no specifications can contradict the definitions of ATN's world.
