@@ -1,3 +1,14 @@
 # ATN: Constants
 
 In ATN, a constant refers to a specific instance of a type.
+
+## Constant Declaration
+
+A constant is declared as one or more words, each one in lower-case, all joined with an underscore character between them. For example:
+
+
+```haskell
+total_amount -- The total amount to be paid.
+```
+
+Just writing the name of the constant is enough to have it known in the current context. No definition is required.
