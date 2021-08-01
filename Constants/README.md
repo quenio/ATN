@@ -23,4 +23,10 @@ total: Amount
 
 That means the constant named `total` refers to an instance of `Amount`, whichever it is.
 
-Any definition allowed in [types](../Types) may be used to define the type of a constant.
+Any definition allowed in [types](../Types) may be used to define the type of a constant. Some examples shown below:
+
+```haskell
+album: {Photo}
+indices: [Natural]
+center: Latitude * Longitude
+```
