@@ -56,3 +56,17 @@ SUM_OF_3_NUMBERS:
 ```
 
 See more about assertions [here](../Assertions).
+
+## Attribute / Relation Definition
+
+Just as [function types](https://en.wikipedia.org/wiki/Function_type) in ATN allow the definition of functions, they can also be used to define attributes and relations between types:
+
+```haskell
+first_name: Employee -> String
+last_name: Employee -> String
+
+employees: Employer -> {Employee}
+employer: Employee -> Employer
+```
+
+In the example above, the `Employee` has two attributes (`first_name` and `last_name`), which are defined by declaring `Employee` as the domain of the function type and `String` as its codomain. Similarly, the one-to-many relation `employees` is defined from `Employer` to `Employee`, where `Employer` is the domain of the function type, and the `{Employee}` set type as its codomain. Alternative, a one-to-one relation from `Employee` to `Employer` is defined by `employer`. The main difference between their definitions is the use of a set type on the `employees` one-to-many relation.
