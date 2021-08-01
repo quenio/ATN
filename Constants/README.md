@@ -73,4 +73,4 @@ In the example above, the `Employee` has two attributes (`first_name` and `last_
 
 Similarly, the one-to-many association `employees` is defined from `Employer` to `Employee`, where `Employer` is the domain of the function type, and the `{Employee}` set type is its codomain. 
 
-Alternatively, a one-to-one association from `Employee` to `Employer` is defined by `employer`. The main difference between the definitions of those two associations is the use of a set type on the `employees` one-to-many association.
+Alternatively, a one-to-one association from `Employee` to `Employer` is defined by `employer`. The main difference between the definitions of those two associations is the use of a set type as the codomain of the `employees` one-to-many association.
