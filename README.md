@@ -38,7 +38,7 @@ An inner-context can be embedded in an outer-context, in which case all the defi
 
 An inner-context may be embedded in many outer-contexts as long as all involved contexts do not have contradictions among themselves.
 
-All contexts of any specifications defined in ATN are automatically embbeded in ATN's outermost context (named `world`), which defines core types, such as `Boolean`, `Character`, `String`, `Natural`, `Real`, among others. That means no specifications can contradict the definitions of ATN's world.
+All contexts of any specifications defined in ATN are automatically embbeded in ATN's outermost context (named `world`), which defines core types, such as `Boolean`, `Character`, `String`, `Natural`, `Real`, among others. That means no specifications should contradict the definitions of ATN's world.
 
 ## Examples
 
