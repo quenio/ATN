@@ -33,7 +33,7 @@ city_center: Latitude * Longitude -- The city's center is a pair consisting of a
 
 ## Function Definition
 
-Since ATN allows the definition of [function types](https://en.wikipedia.org/wiki/Function_type), as shown in [types](../Types), a constant can be used to define a specific function, as shown in the following example:
+Since ATN allows the definition of [function types](https://en.wikipedia.org/wiki/Function_type), as seen in [types](../Types), a constant can be used to define a specific function, as shown in the following example:
 
 ```haskell
 sum: [Amount] -> Amount
