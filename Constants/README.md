@@ -21,4 +21,4 @@ A constant may have its type defined as follows:
 total: Amount
 ```
 
-That means the constant named `total` refers to an instance of `Amount`.
+That means the constant named `total` refers to an instance of `Amount`, whichever it is.
