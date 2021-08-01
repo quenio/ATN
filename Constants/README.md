@@ -33,7 +33,7 @@ city_center: Latitude * Longitude -- The city's center is a pair consisting of a
 
 ## Function Definition
 
-Since ATN allows the definition of [function types](https://en.wikipedia.org/wiki/Function_type), as seen in [types](../Types), a constant can be used to define a specific function, as shown in the following example:
+Since ATN allows the definition of [function types](https://en.wikipedia.org/wiki/Function_type), as seen in [types](../Types), a constant can be used to define a specific [function](https://en.wikipedia.org/wiki/Function_(mathematics)), as shown in the following example:
 
 ```haskell
 sum: [Amount] -> Amount
@@ -59,7 +59,7 @@ See more about assertions [here](../Assertions).
 
 ## Attribute / Association Definition
 
-Just as [function types](https://en.wikipedia.org/wiki/Function_type) in ATN allow the definition of functions, they can also be used to define attributes and associations between types:
+Just as [function types](https://en.wikipedia.org/wiki/Function_type) in ATN allow the definition of functions, they can also be used to define [attributes](https://en.wikipedia.org/wiki/Attribute_(computing)) and [associations](https://en.wikipedia.org/wiki/Association_(object-oriented_programming)) between types:
 
 ```haskell
 first_name: Employee -> String
