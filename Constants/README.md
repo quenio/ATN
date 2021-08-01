@@ -73,4 +73,4 @@ In the example above, the `Employee` has two attributes (`first_name` and `last_
 
 Similarly, the one-to-many relation `employees` is defined from `Employer` to `Employee`, where `Employer` is the domain of the function type, and the `{Employee}` set type as its codomain. 
 
-Alternatively, a one-to-one relation from `Employee` to `Employer` is defined by `employer`. The main difference between their definitions is the use of a set type on the `employees` one-to-many relation.
+Alternatively, a one-to-one relation from `Employee` to `Employer` is defined by `employer`. The main difference between the definitions of those two relations is the use of a set type on the `employees` one-to-many relation.
