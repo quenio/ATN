@@ -22,6 +22,8 @@ In ATN, a constant refers to a specific instance of a type.
 
 In the whole context where such a constant is defined, its name always refers to the same instance.
 
+Learn more about [constants](./Constants).
+
 ### Assertions
 
 In ATN, an assertion is a named expression that should always evaluate to being true within the context where it is defined.
