@@ -8,7 +8,7 @@ It aims at keeping specifications at a sufficient level of [abstraction](https:/
 
 Multiple specifications can be organized in separate [contexts](#Contexts).
 
-> "Abstractions are not a luxury, but a necessity. Thought is man's guide to action. Reason is a practical attribute.", 
+> "Abstractions are not a luxury, but a necessity. Thought is man's guide to action. Reason is a practical attribute.", by
 > [Leonard Peikoff](https://en.wikipedia.org/wiki/Leonard_Peikoff) in [Objectivism: The Philosophy of Ayn Rand](https://en.wikipedia.org/wiki/Objectivism:_The_Philosophy_of_Ayn_Rand)
 
 
