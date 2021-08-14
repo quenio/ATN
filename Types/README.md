@@ -120,7 +120,7 @@ Observe that function types allow ATN specifications to use [functions as values
 StringMap :: String * [Natural] -> String
 ```
 
-Above, the instance of `String` can be used as a function that will allow a `StringMap` instance to map a sequence of natural numbers to another `String`. (This is the basic principle of cryptography.)
+Above, the instance of the `String` function can be used as a value, which will allow in this case a `StringMap` function to map a sequence of natural numbers to another `String`. (This is the basic principle of cryptography.)
 
 In ATN, sequence types are equivalent to function types having `Natural` as the domain:
 
