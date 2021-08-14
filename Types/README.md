@@ -92,7 +92,7 @@ RealNumber :: RationalNumber | IrrationalNumber
 
 That means all instances of the union-type are also an instance of one of the constituent types. For example, an instance of `RealNumber` is either an instance of `RationalNumber` or an instance of `IrrationalNumber`.
 
-Note that, in the example above, the intersection of the constituent types is an empty set. That may not always be the case with a type union. In example below, the intersection of `IntegerNumber` and `RationalNumber` is not an empty set:
+Note that, in the example above, the intersection of the constituent types is an empty set. That may *not* always be the case with a type union. In example below, the intersection of `IntegerNumber` and `RationalNumber` is not an empty set:
 
 ```haskell
 SomeNumber :: IntegerNumber | RationalNumber
