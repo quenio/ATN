@@ -3,5 +3,5 @@
 ## Specification
 
 ```haskell
-Type
+TypeName :: /([A-Z]([a-z][0-9])*)+/
 ```
