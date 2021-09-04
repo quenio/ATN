@@ -15,4 +15,5 @@ Type
 
 context: Type -> Context
 name: Type -> TypeName
+aliases: Type -> {TypeName}
 ```
