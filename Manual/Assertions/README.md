@@ -45,6 +45,8 @@ true: Boolean
 false: Boolean
 
 TRUTH:
+  true
+  not false
   true or false
   false or true
 ```
