@@ -21,4 +21,12 @@ aliases: Type -> {TypeName}
 -- Any type belongs to a hierarchy:
 super_types: Type -> {Type}
 sub_types: Type -> {Type}
+
+-- A type may be defined for instances that are themselves a set containing other elements:
+SetType: Type
+element_type: SetType -> Type
+
+-- A type may be defined for instances that are sequences containing (possibly repeated) elements of another type:
+SeqType: Type
+element_type: SeqType -> Type
 ```
