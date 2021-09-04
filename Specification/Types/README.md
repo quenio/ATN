@@ -18,7 +18,7 @@ TypeName :: /([A-Z]([a-z][0-9])*)+/
 name: Type -> TypeName
 aliases: Type -> {TypeName}
 
--- Any type belongs to a hierachy:
+-- Any type belongs to a hierarchy:
 super_types: {Type}
 sub_types: {Type}
 ```
