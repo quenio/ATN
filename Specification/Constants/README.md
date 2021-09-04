@@ -11,6 +11,6 @@ context: Constant -> Context
 
 -- A constant has a single name but may also have aliases:
 ConstantName :: /([a-z]([a-z][0-9]_)*)+/
-name: Constant -> Constantame
+name: Constant -> ConstantName
 aliases: Constant -> {ConstantName}
 ```
