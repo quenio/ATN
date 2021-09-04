@@ -22,11 +22,11 @@ aliases: Type -> {TypeName}
 super_types: Type -> {Type}
 sub_types: Type -> {Type}
 
--- A type for instances that are themselves a set containing other elements:
+-- A type for sets containing other elements:
 SetType: Type
 element_type: SetType -> Type
 
--- A type for instances that are sequences containing (possibly repeated) elements of another type:
+-- A type for sequences containing (possibly repeated) elements of another type:
 SeqType: Type
 element_type: SeqType -> Type
 ```
