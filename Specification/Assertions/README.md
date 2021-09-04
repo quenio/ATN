@@ -14,4 +14,8 @@ context: Assertion -> Context
 AssertionName :: /([A-Z]([A-Z][0-9]_)+)+/
 name: Assertion -> AssertionName
 aliases: Assertion -> {AssertionName}
+
+-- An assertion for which the expression is a constant:
+ConstantAssertion: Assertion
+expression: ConstantAssertion -> Constant
 ```
