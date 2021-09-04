@@ -32,5 +32,9 @@ element_type: SeqType -> Type
 
 -- A type defined as a (ordered) product of other types:
 ProductType: Type
-element_types: ProductType -> [Type]
+product_types: ProductType -> [Type]
+
+-- A type defined as the union of other types:
+UnionType: Type
+union_types: UnionType -> {Type}
 ```
