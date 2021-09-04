@@ -9,13 +9,16 @@ Types are [sets](https://en.wikipedia.org/wiki/Set_(mathematics)) that integrate
 ## Specification
 
 ```haskell
-TypeName :: /([A-Z]([a-z][0-9])*)+/
-
+-- Types are defined in a context:
 Type
-
 context: Type -> Context
+
+-- A type has a single name but may also have aliases:
+TypeName :: /([A-Z]([a-z][0-9])*)+/
 name: Type -> TypeName
 aliases: Type -> {TypeName}
+
+-- Any type belongs to a hierachy:
 super_types: {Type}
 sub_types: {Type}
 ```
