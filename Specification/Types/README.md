@@ -30,7 +30,7 @@ element_type: SetType -> Type
 SeqType: Type
 element_type: SeqType -> Type
 
--- A type defined as a product of other types:
+-- A type defined as a product (in sequence) of other types:
 ProductType: Type
 element_types: ProductType -> [Type]
 ```
