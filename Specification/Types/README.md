@@ -37,4 +37,10 @@ product_types: ProductType -> [Type]
 -- A type defined as the union of other types:
 UnionType: Type
 union_types: UnionType -> {Type}
+
+-- A type defined for functions:
+FunctionType: Type
+domain: FunctionType -> Type
+range: FunctionType -> Type
+range :: codomain
 ```
