@@ -33,6 +33,8 @@ true: Boolean
 false: Boolean
 
 TRUTH:
+  true
+  not false
   true and not false
 ```
 
