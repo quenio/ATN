@@ -1,5 +1,7 @@
 ## ATN Specification
 
+The specification of ATN written in itself.
+
 # Contexts
 
 ## [Types](./Types/README.md)
