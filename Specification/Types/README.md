@@ -14,5 +14,5 @@ TypeName :: /([A-Z]([a-z][0-9])*)+/
 Type
 
 context: Type -> Context
-name: Context * Type -> TypeName
+name: Type -> TypeName
 ```
