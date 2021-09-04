@@ -13,7 +13,7 @@ TRUTH:
   true
 ```
 
-## Congruence Assertions
+## Congruent Assertions
 
 ```haskell
 p: Truth
