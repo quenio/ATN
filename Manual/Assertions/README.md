@@ -36,6 +36,19 @@ TRUTH:
   true and not false
 ```
 
+## Disjunct Assertions
+
+An assertion composed of two other assertions by a disjunction:
+
+```haskell
+true: Boolean
+false: Boolean
+
+TRUTH:
+  true or false
+  false or true
+```
+
 ## Congruent Assertions
 
 ```haskell
