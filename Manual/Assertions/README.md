@@ -13,6 +13,17 @@ TRUTH:
   true
 ```
 
+## Negative Assertions
+
+The simplest logic operator in an assertion is the negation:
+
+```haskell
+false: Truth
+
+TRUTH:
+  not false
+```
+
 ## Congruent Assertions
 
 ```haskell
