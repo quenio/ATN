@@ -22,7 +22,7 @@ aliases: Type -> {TypeName}
 super_types: Type -> {Type}
 sub_types: Type -> {Type}
 
--- A type for sets containing other elements:
+-- A type for sets containing elements of another type:
 SetType: Type
 element_type: SetType -> Type
 
