@@ -73,12 +73,20 @@ TRUTH:
 
 ## Congruent Assertions
 
+An assertion composed of two other assertions by a congruence:
+
 ```haskell
 p: Boolean
 q: Boolean
 
+CONTRAPOSITION:
+  (p => q) <=> (not q => not p)
+
 DE_MORGAN_THEOREM:
   not (p or q) <=> (not p) and (not q)
   not (p and q) <=> (not p) or (not q)
+  
+IMPLICATION_DEFINITION:
+  (p => q) <=> (not p or q)
 ```
 
