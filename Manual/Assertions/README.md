@@ -54,7 +54,7 @@ TRUTH:
   false or true
 ```
 
-## Implicative Assertion
+## Implicative Assertions
 
 An assertion composed of two other assertions by an implication:
 
