@@ -16,4 +16,6 @@ Type
 context: Type -> Context
 name: Type -> TypeName
 aliases: Type -> {TypeName}
+super_types: {Type}
+sub_types: {Type}
 ```
