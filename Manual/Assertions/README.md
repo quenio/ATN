@@ -4,7 +4,7 @@ In ATN, an assertion is a named expression that should always be true within the
 
 ## Constant Assertions
 
-The simplest assertion expression is the reference to a constant:
+The simplest assertion expression is the reference to a boolean constant:
 
 ```haskell
 true: Boolean
