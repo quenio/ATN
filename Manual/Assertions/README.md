@@ -54,6 +54,23 @@ TRUTH:
   false or true
 ```
 
+## Implicative Assertion
+
+An assertion composed of two other assertions by an implication:
+
+```haskell
+true: Boolean
+false: Boolean
+
+TRUTH:
+  true
+  not false
+  false => false
+  false => true
+  true => true
+  not (true => false)
+```
+
 ## Congruent Assertions
 
 ```haskell
