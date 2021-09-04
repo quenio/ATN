@@ -26,7 +26,7 @@ TRUTH:
 
 ## Conjunct Assertion
 
-The assertion composed by two other assertions by a conjunction:
+The assertion composed of two other assertions by a conjunction:
 
 ```haskell
 true: Boolean
