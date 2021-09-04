@@ -6,4 +6,6 @@ Types are [sets](https://en.wikipedia.org/wiki/Set_(mathematics)) that integrate
 
 ```haskell
 TypeName :: /([A-Z]([a-z][0-9])*)+/
+
+Type :: (name: TypeName)
 ```
