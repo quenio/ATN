@@ -13,4 +13,7 @@ context: Constant -> Context
 ConstantName :: /([a-z]([a-z][0-9]_)*)+/
 name: Constant -> ConstantName
 aliases: Constant -> {ConstantName}
+
+-- A constant refers to an instance of a type:
+type: Constant -> Type
 ```
