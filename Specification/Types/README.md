@@ -29,4 +29,8 @@ element_type: SetType -> Type
 -- A type for sequences containing (possibly repeated) elements of another type:
 SeqType: Type
 element_type: SeqType -> Type
+
+-- A type defined as a product of other types:
+ProductType: Type
+element_types: ProductType -> [Type]
 ```
