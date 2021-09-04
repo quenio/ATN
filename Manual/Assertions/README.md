@@ -36,6 +36,7 @@ TRUTH:
   true
   not false
   true and not false
+  not false and true
 ```
 
 ## Disjunct Assertions
