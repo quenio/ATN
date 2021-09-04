@@ -7,7 +7,7 @@ In ATN, an assertion is a named expression that should always be true within the
 The simplest assertion expression is the reference to a constant:
 
 ```haskell
-true: Truth
+true: Boolean
 
 TRUTH:
   true
@@ -18,17 +18,29 @@ TRUTH:
 The simplest logic operator in an assertion is the negation:
 
 ```haskell
-false: Truth
+false: Boolean
 
 TRUTH:
   not false
 ```
 
+## Conjunct Assertion
+
+The assertion composed by two other assertions by a conjunction:
+
+```haskell
+true: Boolean
+false: Boolean
+
+TRUTH:
+  true and not false
+```
+
 ## Congruent Assertions
 
 ```haskell
-p: Truth
-q: Truth
+p: Boolean
+q: Boolean
 
 DE_MORGAN_THEOREM:
   not (p or q) <=> (not p) and (not q)
