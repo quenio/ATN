@@ -103,7 +103,7 @@ IMPLICATION_EQUIVALENCE:
 
 ## Universal Quantifications
 
-An assertion prefixed by the [universal quantifier](https://en.wikipedia.org/wiki/Universal_quantification) (`all ... in ...`):
+An assertion prefixed by the [universal quantifier](https://en.wikipedia.org/wiki/Universal_quantification) (`all var in Type`):
 
 ```haskell
 EXCLUDED_MIDDLE_LAW:
