@@ -101,3 +101,13 @@ IMPLICATION_EQUIVALENCE:
   (p => q) <=> (not p) or q
 ```
 
+## Universal Quantifications
+
+An assertion prefixed by the [universal quantifier](https://en.wikipedia.org/wiki/Universal_quantification) (`all ... in ...`):
+
+```haskell
+DOUBLE_EQUIVALENCE:
+  all n in Natural:
+    2 * n = n + n
+```
+
