@@ -87,6 +87,6 @@ DE_MORGAN_THEOREM:
   not (p and q) <=> (not p) or (not q)
   
 IMPLICATION_EQUIVALENCE:
-  (p => q) <=> (not p or q)
+  (p => q) <=> ((not p) or q)
 ```
 
