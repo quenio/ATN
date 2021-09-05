@@ -87,7 +87,6 @@ TRUTH:
   not (true <=> false)
   not (false <=> true)
 
-
 p: Boolean
 q: Boolean
 
