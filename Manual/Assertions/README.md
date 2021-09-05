@@ -15,7 +15,7 @@ TRUTH:
 
 ## Negative Assertions
 
-The simplest logic operator in an assertion is the negation operator:
+The simplest logic operator in an assertion is the negation operator (`not`):
 
 ```haskell
 false: Boolean
@@ -26,7 +26,7 @@ TRUTH:
 
 ## Conjunct Assertions
 
-An assertion composed of two other assertions by the conjunction operator:
+An assertion composed of two other assertions by the conjunction operator (`and`):
 
 ```haskell
 true: Boolean
@@ -41,7 +41,7 @@ TRUTH:
 
 ## Disjunct Assertions
 
-An assertion composed of two other assertions by the disjunction operator:
+An assertion composed of two other assertions by the disjunction operator (`or`):
 
 ```haskell
 true: Boolean
@@ -56,7 +56,7 @@ TRUTH:
 
 ## Implicative Assertions
 
-An assertion composed of two other assertions by the implication operator:
+An assertion composed of two other assertions by the implication operator (`=>`):
 
 ```haskell
 true: Boolean
@@ -73,7 +73,7 @@ TRUTH:
 
 ## Equivalent Assertions
 
-An assertion composed of two other assertions by the equivalence operator:
+An assertion composed of two other assertions by the equivalence operator (`<=>`):
 
 ```haskell
 p: Boolean
