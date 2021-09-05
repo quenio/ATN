@@ -76,6 +76,18 @@ TRUTH:
 An assertion composed of two other assertions by the equivalence operator (`<=>`):
 
 ```haskell
+true: Boolean
+false: Boolean
+
+TRUTH:
+  true
+  not false
+  true <=> true
+  false <=> false
+  not (true <=> false)
+  not (false <=> true)
+
+
 p: Boolean
 q: Boolean
 
