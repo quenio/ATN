@@ -113,10 +113,10 @@ EXCLUDED_MIDDLE_LAW:
 
 ## Existential Quantifications
 
-An assertion prefixed by the [existential quantifier](https://en.wikipedia.org/wiki/Existential_quantification) (`any var in Type`):
+An assertion prefixed by the [existential quantifier](https://en.wikipedia.org/wiki/Existential_quantification) (`exists var in Type`):
 
 ```haskell
 TRUTH:
-  any p in Boolean:
+  exists p in Boolean:
     p
 ```
