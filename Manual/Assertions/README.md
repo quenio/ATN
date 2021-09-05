@@ -117,6 +117,6 @@ An assertion prefixed by the [existential quantifier](https://en.wikipedia.org/w
 
 ```haskell
 TRUTH:
-  exists p in Boolean:
+  some p in Boolean:
     p
 ```
