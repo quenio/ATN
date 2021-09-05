@@ -71,9 +71,9 @@ TRUTH:
   not (true => false)
 ```
 
-## Congruent Assertions
+## Equivalent Assertions
 
-An assertion composed of two other assertions by a congruence:
+An assertion composed of two other assertions by an equivalence:
 
 ```haskell
 p: Boolean
@@ -86,7 +86,7 @@ DE_MORGAN_THEOREM:
   not (p or q) <=> (not p) and (not q)
   not (p and q) <=> (not p) or (not q)
   
-IMPLICATION_DEFINITION:
+IMPLICATION_EQUIVALENCE:
   (p => q) <=> (not p or q)
 ```
 
