@@ -13,7 +13,7 @@ TRUTH:
   true
 ```
 
-## Negative Assertions
+## Negation Assertions
 
 The simplest logic operator in an assertion is the negation operator (`not`):
 
@@ -24,7 +24,7 @@ TRUTH:
   not false
 ```
 
-## Conjunct Assertions
+## Conjunction Assertions
 
 An assertion composed of two other assertions by the conjunction operator (`and`):
 
@@ -39,7 +39,7 @@ TRUTH:
   not false and true
 ```
 
-## Disjunct Assertions
+## Disjunction Assertions
 
 An assertion composed of two other assertions by the disjunction operator (`or`):
 
@@ -54,7 +54,7 @@ TRUTH:
   false or true
 ```
 
-## Implicative Assertions
+## Implication Assertions
 
 An assertion composed of two other assertions by the implication operator (`=>`):
 
@@ -71,7 +71,7 @@ TRUTH:
   not (true => false)
 ```
 
-## Equivalent Assertions
+## Equivalence Assertions
 
 An assertion composed of two other assertions by the equivalence operator (`<=>`):
 
