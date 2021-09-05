@@ -111,3 +111,12 @@ EXCLUDED_MIDDLE_LAW:
     p or not p
 ```
 
+## Existential Quantifications
+
+An assertion prefixed by the [existential quantifier](https://en.wikipedia.org/wiki/Existential_quantification) (`exists var in Type`):
+
+```haskell
+TRUTH:
+  exists p in Boolean:
+    p
+```
