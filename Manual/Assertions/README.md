@@ -119,4 +119,7 @@ An assertion prefixed by the [existential quantifier](https://en.wikipedia.org/w
 TRUTH:
   some p in Boolean:
     p
+    
+QUANTIFICATION_EQUIVALENCE:
+  (all p in Boolean: p or not p) <=> not (some p in Boolean: p and not p)
 ```
