@@ -2,7 +2,7 @@
 
 In ATN, an assertion is a named expression that should always be true within the context where it is defined.
 
-## Constant Assertions
+## Constants
 
 The simplest assertion expression is the reference to a boolean constant:
 
@@ -13,7 +13,7 @@ TRUTH:
   true
 ```
 
-## Negation Assertions
+## Negations
 
 The simplest logic operator in an assertion is the negation operator (`not`):
 
@@ -24,7 +24,7 @@ TRUTH:
   not false
 ```
 
-## Conjunction Assertions
+## Conjunctions
 
 An assertion composed of two other assertions by the conjunction operator (`and`):
 
@@ -39,7 +39,7 @@ TRUTH:
   not false and true
 ```
 
-## Disjunction Assertions
+## Disjunctions
 
 An assertion composed of two other assertions by the disjunction operator (`or`):
 
@@ -54,7 +54,7 @@ TRUTH:
   false or true
 ```
 
-## Implication Assertions
+## Implications
 
 An assertion composed of two other assertions by the implication operator (`=>`):
 
@@ -71,7 +71,7 @@ TRUTH:
   not (true => false)
 ```
 
-## Equivalence Assertions
+## Equivalences
 
 An assertion composed of two other assertions by the equivalence operator (`<=>`):
 
