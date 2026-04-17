@@ -8,6 +8,7 @@ In ATN, the program is specified by the relation between input and output, toget
 
 ```haskell
 reverse: String -> String
+length: String -> Natural
 input: String
 output: String
 
@@ -18,8 +19,14 @@ REVERSING_TWICE_YIELDS_THE_ORIGINAL:
   all text in String:
     reverse(reverse(text)) = text
 
-REVERSE_OF_HELLO:
-  reverse("Hello") = "olleH"
+REVERSE_PRESERVES_LENGTH:
+  all text in String:
+    length(reverse(text)) = length(text)
+
+REVERSE_MIRRORS_CHARACTER_POSITIONS:
+  all text in String:
+    all i in Natural:
+      i < length(text) => reverse(text)(i) = text(length(text) - i - 1)
 ```
 
 ## Notes
@@ -27,5 +34,6 @@ REVERSE_OF_HELLO:
 - `input` is a constant of type `String` representing the program input.
 - `output` is a constant of type `String` representing the program output.
 - `reverse` is an abstract function over strings.
+- `length` is used to express general properties of string reversal.
 - `OUTPUT_IS_THE_REVERSE` specifies the observable behavior of the program.
-- The additional assertions help characterize what the reverse operation means.
+- The additional assertions characterize reversal in general terms, instead of relying on a single concrete example.
