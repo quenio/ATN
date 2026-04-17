@@ -26,11 +26,19 @@ MAXIMUM_IS_NEVER_SMALLER_THAN_SECOND:
 MAXIMUM_IS_ONE_OF_THE_ARGUMENTS:
   all a, b in Natural:
     max(a, b) = a or max(a, b) = b
+
+FIRST_IS_MAX_WHEN_NOT_SMALLER:
+  all a, b in Natural:
+    a >= b => max(a, b) = a
+
+SECOND_IS_MAX_WHEN_NOT_SMALLER:
+  all a, b in Natural:
+    b >= a => max(a, b) = b
 ```
 
 ## Notes
 
 - `first_input` and `second_input` are constants of type `Natural` representing the program inputs.
 - `output` is a constant of type `Natural` representing the program output.
-- `max` is specified as the function that returns one of its arguments and is never smaller than either of them.
+- `max` is specified as the function that returns one of its arguments, is never smaller than either of them, and agrees with the ordering between the two inputs.
 - `OUTPUT_IS_THE_MAXIMUM` connects the program output to that abstract specification.
