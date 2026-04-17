@@ -17,3 +17,15 @@ A minimal ATN specification for a program that returns its input unchanged.
 ## [SumOfTwoNumbers](./SumOfTwoNumbers)
 
 A minimal ATN specification for a program that outputs the sum of two inputs.
+
+## [MaxOfTwoNumbers](./MaxOfTwoNumbers)
+
+A minimal ATN specification for a program that outputs the greater of two inputs.
+
+## [ReverseString](./ReverseString)
+
+A minimal ATN specification for a program that outputs the reverse of a string.
+
+## [Factorial](./Factorial)
+
+A minimal ATN specification for a program that outputs the factorial of a natural number.
