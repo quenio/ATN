@@ -13,3 +13,7 @@ The specification of ATN written in itself.
 ## [Examples](./Examples)
 
 Examples of specifications written in ATN.
+
+## [Applications](./Applications)
+
+Applications of ATN in specification-oriented work.
