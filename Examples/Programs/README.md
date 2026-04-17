@@ -29,3 +29,7 @@ A minimal ATN specification for a program that outputs the reverse of a string.
 ## [Factorial](./Factorial)
 
 A minimal ATN specification for a program that outputs the factorial of a natural number.
+
+## [Sorting](./Sorting)
+
+A minimal ATN specification for a program that sorts a sequence of natural numbers.
