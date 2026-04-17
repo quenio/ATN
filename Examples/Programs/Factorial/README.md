@@ -18,6 +18,9 @@ FACTORIAL_OF_SUCCESSOR:
   all n in Natural:
     factorial(n + 1) = (n + 1) * factorial(n)
 
+FACTORIAL_OF_ONE:
+  factorial(1) = 1
+
 OUTPUT_IS_THE_FACTORIAL:
   output = factorial(input)
 ```
@@ -26,5 +29,5 @@ OUTPUT_IS_THE_FACTORIAL:
 
 - `input` is a constant of type `Natural` representing the program input.
 - `output` is a constant of type `Natural` representing the program output.
-- `factorial` is specified recursively by its base case and successor case.
+- `factorial` is specified recursively by its base case and successor case, with `factorial(1)` stated explicitly as well.
 - `OUTPUT_IS_THE_FACTORIAL` connects the observable output of the program to the mathematical definition.
