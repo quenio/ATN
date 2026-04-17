@@ -14,12 +14,12 @@ output: Natural
 FACTORIAL_OF_ZERO:
   factorial(0) = 1
 
+FACTORIAL_OF_ONE:
+  factorial(1) = 1
+
 FACTORIAL_OF_SUCCESSOR:
   all n in Natural:
     factorial(n + 1) = (n + 1) * factorial(n)
-
-FACTORIAL_OF_ONE:
-  factorial(1) = 1
 
 OUTPUT_IS_THE_FACTORIAL:
   output = factorial(input)
