@@ -52,4 +52,4 @@ All contexts of any specifications defined in ATN are automatically embbeded in 
 
 ATN can be used to specify anything, from programs to processes, from physical systems to theories. Anything that can be integrated into concepts of a mind can be specified in ATN.
 
-Below, some examples are shown that demonstrate the expressive power of ATN in specifications.
+See the [examples](../Examples) folder for a collection of specifications that demonstrate the expressive power of ATN.
