@@ -1,4 +1,4 @@
-# ATN Example: Smallest Process
+# ATN Example: Simplest Process
 
 This example shows a minimal ATN specification for a process.
 

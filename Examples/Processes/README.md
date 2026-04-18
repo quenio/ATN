@@ -2,6 +2,6 @@
 
 Examples of ATN specifications for processes.
 
-## [Smallest](./Smallest)
+## [Simplest](./Simplest)
 
 A minimal ATN specification for a process with a single completion condition.
