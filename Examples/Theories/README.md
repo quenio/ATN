@@ -17,3 +17,7 @@ A minimal ATN specification for a theory with an abstract ordering relation over
 ## [Combination](./Combination)
 
 A minimal ATN specification for a theory with an abstract function, an identity element and algebraic laws.
+
+## [Taxonomy](./Taxonomy)
+
+A minimal ATN specification for a theory with a subtype taxonomy and classification constraints.
