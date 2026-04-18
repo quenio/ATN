@@ -1,3 +1,3 @@
 # ATN Activities: Specification
 
-Using ATN to capture, refine, validate and verify specifications.
+Using ATN to specify required constraints, behaviors and invariants.
