@@ -8,4 +8,4 @@ A minimal ATN specification for a process with a single completion condition.
 
 ## [Approval](./Approval)
 
-A minimal ATN specification for a process that reaches one of two mutually exclusive decisions.
+A minimal ATN specification for a process that may remain pending or reach one of two mutually exclusive decisions.
