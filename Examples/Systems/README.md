@@ -9,3 +9,7 @@ A minimal ATN specification for a system with power and operation states.
 ## [Controlled](./Controlled)
 
 A minimal ATN specification for a system with an intermediate enablement state before operation.
+
+## [Protected](./Protected)
+
+A minimal ATN specification for a system with enablement, operation and fault protection constraints.
