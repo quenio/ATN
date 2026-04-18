@@ -54,4 +54,4 @@ ATN can be used to specify anything, from programs to processes, from physical s
 
 See the [examples](../Examples) folder for a collection of specifications that demonstrate the expressive power of ATN.
 
-See the [applications](../Applications) folder for areas where ATN can be applied in specification-oriented work.
+See the [activities](../Activities) folder for specification-oriented activities supported by ATN.
