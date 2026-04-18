@@ -2,37 +2,9 @@
 
 Using ATN in concrete domains where precise specifications are valuable.
 
-## [Finance](./Finance)
+## [Astronomy](./Astronomy)
 
-Using ATN in financial products, transactions and controls.
-
-## [Healthcare](./Healthcare)
-
-Using ATN in clinical workflows, records and safety constraints.
-
-## [Manufacturing](./Manufacturing)
-
-Using ATN in production processes, resources and quality rules.
-
-## [Logistics](./Logistics)
-
-Using ATN in shipments, inventories and supply-chain operations.
-
-## [Legal](./Legal)
-
-Using ATN in contracts, obligations, permissions and compliance rules.
-
-## [Government](./Government)
-
-Using ATN in policies, procedures, eligibility rules and public administration.
-
-## [Telecommunications](./Telecommunications)
-
-Using ATN in protocols, service constraints and network operations.
-
-## [Education](./Education)
-
-Using ATN in curricula, assessment rules and academic processes.
+Using ATN in celestial bodies, observations and orbital relationships.
 
 ## [Biology](./Biology)
 
@@ -42,22 +14,50 @@ Using ATN in biological classification, processes and system constraints.
 
 Using ATN in substances, reactions and composition rules.
 
-## [Materials](./Materials)
+## [Economics](./Economics)
 
-Using ATN in material properties, structures and performance constraints.
+Using ATN in markets, incentives, transactions and policy models.
+
+## [Education](./Education)
+
+Using ATN in curricula, assessment rules and academic processes.
 
 ## [Engineering](./Engineering)
 
 Using ATN in requirements, interfaces, components and operational constraints.
 
-## [Economics](./Economics)
+## [Finance](./Finance)
 
-Using ATN in markets, incentives, transactions and policy models.
+Using ATN in financial products, transactions and controls.
 
-## [Astronomy](./Astronomy)
+## [Government](./Government)
 
-Using ATN in celestial bodies, observations and orbital relationships.
+Using ATN in policies, procedures, eligibility rules and public administration.
+
+## [Healthcare](./Healthcare)
+
+Using ATN in clinical workflows, records and safety constraints.
+
+## [Legal](./Legal)
+
+Using ATN in contracts, obligations, permissions and compliance rules.
+
+## [Logistics](./Logistics)
+
+Using ATN in shipments, inventories and supply-chain operations.
+
+## [Manufacturing](./Manufacturing)
+
+Using ATN in production processes, resources and quality rules.
+
+## [Materials](./Materials)
+
+Using ATN in material properties, structures and performance constraints.
 
 ## [Physics](./Physics)
 
 Using ATN in physical quantities, laws and system interactions.
+
+## [Telecommunications](./Telecommunications)
+
+Using ATN in protocols, service constraints and network operations.
