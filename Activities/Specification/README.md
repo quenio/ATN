@@ -1,3 +1,3 @@
 # ATN Activities: Specification
 
-Activities of ATN in capturing, refining, validating and verifying specifications.
+Activities using ATN to capture, refine, validate and verify specifications.

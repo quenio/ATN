@@ -1,3 +1,3 @@
 # ATN Activities: Documentation
 
-Activities of ATN in documentation.
+Activities using ATN to create precise technical documentation.

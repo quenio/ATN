@@ -1,19 +1,19 @@
 # ATN Activities
 
-Activities of ATN in specification-oriented work.
+Activities using ATN in specification-oriented work.
 
 ## [Specification](./Specification)
 
-Activities of ATN in capturing, refining, validating and verifying specifications.
+Activities using ATN to capture, refine, validate and verify specifications.
 
 ## [Implementation](./Implementation)
 
-Activities of ATN in guiding and constraining implementations.
+Activities using ATN to guide and constrain implementations.
 
 ## [Testing](./Testing)
 
-Activities of ATN in deriving and organizing tests from specifications.
+Activities using ATN to derive and organize tests from specifications.
 
 ## [Documentation](./Documentation)
 
-Activities of ATN in creating precise technical documentation.
+Activities using ATN to create precise technical documentation.
