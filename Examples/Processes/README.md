@@ -13,3 +13,7 @@ A minimal ATN specification for a process that may remain pending or reach one o
 ## [Review](./Review)
 
 A minimal ATN specification for a process with an intermediate review stage before a decision.
+
+## [ApprovalWithRoles](./ApprovalWithRoles)
+
+A minimal ATN specification for an approval process with explicit participants and role separation.
