@@ -10,9 +10,9 @@ Examples that specify the behavior and structure of programs.
 
 Examples that specify processes and workflows.
 
-## [PhysicalSystems](./PhysicalSystems)
+## [Systems](./Systems)
 
-Examples that specify physical systems.
+Examples that specify systems.
 
 ## [Theories](./Theories)
 
