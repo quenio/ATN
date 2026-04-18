@@ -29,8 +29,8 @@ SORT_PRESERVES_LENGTH:
 
 SORT_PRESERVES_ELEMENT_COUNTS:
   all values in [Natural]:
-    all x, n in Natural:
-      count(sort(values), x) = n <=> count(values, x) = n
+    all x in Natural:
+      count(sort(values), x) = count(values, x)
 
 SORT_OUTPUT_IS_NONDECREASING:
   all values in [Natural]:
@@ -44,6 +44,6 @@ SORT_OUTPUT_IS_NONDECREASING:
 - `output` is a constant of type `[Natural]` representing the program output.
 - `sort` is an abstract function over sequences of natural numbers.
 - `length` and `count` are used to express general properties of sorting.
-- `SORT_PRESERVES_ELEMENT_COUNTS` states that, for every value and every possible multiplicity, sorting preserves whether that value occurs that many times, including repeated values.
+- `SORT_PRESERVES_ELEMENT_COUNTS` states that sorting keeps exactly the same elements, including repeated values.
 - `SORT_OUTPUT_IS_NONDECREASING` states that the resulting sequence is ordered from smaller to greater values.
 - The example specifies what a sorting program must produce, not which sorting algorithm it uses.
