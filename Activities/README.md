@@ -6,13 +6,13 @@ Using ATN to support modeling, analysis, specification and related work.
 
 Using ATN to analyze implications, consistency, completeness and alternatives.
 
-## [Compliance](./Compliance)
-
-Using ATN to assess conformance with rules, standards, regulations and contracts.
-
 ## [Documentation](./Documentation)
 
 Using ATN to create precise technical documentation.
+
+## [Governance](./Governance)
+
+Using ATN to define and manage policies, controls, roles and decision rules.
 
 ## [Implementation](./Implementation)
 
