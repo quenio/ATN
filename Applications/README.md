@@ -2,13 +2,9 @@
 
 Applications of ATN in specification-oriented work.
 
-## [Requirements](./Requirements)
+## [Specification](./Specification)
 
-Applications of ATN in capturing and refining requirements.
-
-## [Verification](./Verification)
-
-Applications of ATN in validating consistency and expected properties.
+Applications of ATN in capturing, refining, validating and verifying specifications.
 
 ## [Documentation](./Documentation)
 
