@@ -6,10 +6,6 @@ Applications of ATN in specification-oriented work.
 
 Applications of ATN in capturing and refining requirements.
 
-## [SystemDesign](./SystemDesign)
-
-Applications of ATN in modeling system structure and behavior.
-
 ## [Verification](./Verification)
 
 Applications of ATN in validating consistency and expected properties.
