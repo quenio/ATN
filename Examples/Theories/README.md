@@ -13,3 +13,7 @@ A minimal ATN specification for a theory with a logical dependency between two p
 ## [Ordering](./Ordering)
 
 A minimal ATN specification for a theory with an abstract ordering relation over a type.
+
+## [Combination](./Combination)
+
+A minimal ATN specification for a theory with an abstract function, an identity element and algebraic laws.
