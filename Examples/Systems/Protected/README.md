@@ -18,8 +18,8 @@ ENABLEMENT_REQUIRES_POWER:
 OPERATION_REQUIRES_ENABLEMENT:
   operational => enabled
 
-OPERATION_REQUIRES_NO_FAULT:
-  operational => not faulted
+ENABLEMENT_REQUIRES_NO_FAULT:
+  enabled => not faulted
 ```
 
 ## Notes
@@ -30,5 +30,5 @@ OPERATION_REQUIRES_NO_FAULT:
 - `faulted` indicates whether the system is in a fault condition.
 - `ENABLEMENT_REQUIRES_POWER` states that the system cannot be enabled unless it is powered.
 - `OPERATION_REQUIRES_ENABLEMENT` states that the system cannot operate unless it has been enabled.
-- `OPERATION_REQUIRES_NO_FAULT` states that the system cannot operate while faulted.
-- The example adds a protection constraint on top of the controlled system, making it slightly more expressive while remaining simple.
+- `ENABLEMENT_REQUIRES_NO_FAULT` states that the system cannot even be enabled while faulted.
+- The example adds a stronger protection constraint on top of the controlled system, making it slightly more expressive while remaining simple.
