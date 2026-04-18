@@ -17,3 +17,19 @@ Using ATN in production processes, resources and quality rules.
 ## [Logistics](./Logistics)
 
 Using ATN in shipments, inventories and supply-chain operations.
+
+## [Legal](./Legal)
+
+Using ATN in contracts, obligations, permissions and compliance rules.
+
+## [Government](./Government)
+
+Using ATN in policies, procedures, eligibility rules and public administration.
+
+## [Telecommunications](./Telecommunications)
+
+Using ATN in protocols, service constraints and network operations.
+
+## [Education](./Education)
+
+Using ATN in curricula, assessment rules and academic processes.
