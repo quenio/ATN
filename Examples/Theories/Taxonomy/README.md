@@ -29,8 +29,8 @@ ALL_BIRDS_ARE_LIVING_BEINGS:
 
 NO_PLANT_IS_AN_ANIMAL:
   all x in Plant:
-    not:
-      some y in Animal:
+    all y in Animal:
+      not:
         x = y
 ```
 
