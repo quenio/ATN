@@ -1,3 +1,3 @@
 # ATN Activities: Implementation
 
-Activities using ATN to guide and constrain implementations.
+Using ATN to guide and constrain implementations.

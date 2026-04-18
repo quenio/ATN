@@ -16,4 +16,4 @@ Examples of specifications written in ATN.
 
 ## [Activities](./Activities)
 
-Activities using ATN in specification-oriented work.
+Using ATN to support specification-oriented work.
