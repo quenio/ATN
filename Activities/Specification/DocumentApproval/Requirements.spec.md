@@ -1,6 +1,6 @@
 # Document Approval Requirements Specification
 
-This document converts the natural-language requirements in `Activities/Specification/DocumentApprovalRequirements.md` into an ATN specification.
+This document converts the natural-language requirements in `Activities/Specification/DocumentApproval/Requirements.md` into an ATN specification.
 
 ## Extracted Requirements
 
@@ -14,8 +14,8 @@ This document converts the natural-language requirements in `Activities/Specific
 
 ## Assumptions
 
-- The workflow scope is modeled as a single document instance, so the specification uses document-state constants rather than a collection of documents.
-- A non-empty title is represented by the condition `not (title = "")`.
+- Because the stated scope is a single document at a time, the specification models one document state directly with constants rather than a collection of documents.
+- A non-empty title is represented by `not (title = "")`.
 
 ## Specification
 
@@ -42,4 +42,4 @@ APPROVED_DOCUMENT_REQUIRES_NON_EMPTY_TITLE:
 - `APPROVAL_REQUIRES_REVIEW` states that approval is only valid after review.
 - `REVIEW_REQUIRES_NON_EMPTY_TITLE` states that a reviewed document must have a non-empty title.
 - `APPROVED_DOCUMENT_REQUIRES_NON_EMPTY_TITLE` states that an approved document must also have a non-empty title.
-- Because the workflow concerns a single document at a time, the specification constrains one document state rather than modeling multiple documents.
+- The specification constrains valid document states without prescribing an implementation workflow.

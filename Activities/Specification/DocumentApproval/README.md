@@ -1,16 +1,17 @@
-# Document Approval Requirements
+# Document Approval `atn spec` Test
 
-This document defines a small set of requirements for a document approval workflow.
+This folder contains a small end-to-end test for `atn spec`.
 
-## Scope
+It starts from a short natural-language requirements document for a document approval workflow and checks that `atn spec` can generate a corresponding ATN specification.
 
-The workflow concerns a single document at a time.
+## Files
 
-## Requirements
+- [`Requirements.md`](./Requirements.md): source requirements document
+- [`Requirements.spec.md`](./Requirements.spec.md): generated ATN specification
 
-- Every document has a title.
-- Every document has a reviewed flag.
-- Every document has an approved flag.
-- A document may be approved only if it has been reviewed.
-- A document may be reviewed only if its title is not empty.
-- An approved document must also have a non-empty title.
+## Purpose
+
+This test is meant to verify that `atn spec` can:
+- read a Markdown requirements document,
+- extract its core requirements,
+- and produce a faithful ATN specification in Markdown.
