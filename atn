@@ -1,0 +1,167 @@
+#!/usr/bin/env bash
+set -euo pipefail
+
+usage() {
+  cat >&2 <<'EOF'
+Usage:
+  atn spec <markdown_file.md>
+
+Commands:
+  spec    Generate <markdown_file.spec.md> from natural-language requirements in <markdown_file.md>
+EOF
+}
+
+die() {
+  echo "Error: $*" >&2
+  exit 1
+}
+
+if [[ $# -lt 1 ]]; then
+  usage
+  exit 1
+fi
+
+command="$1"
+shift
+
+case "$command" in
+  spec)
+    if [[ $# -ne 1 ]]; then
+      usage
+      exit 1
+    fi
+
+    input_file="$1"
+
+    if [[ ! -f "$input_file" ]]; then
+      die "Input file not found: $input_file"
+    fi
+
+    if [[ "$input_file" != *.md ]]; then
+      die "Input file must be a Markdown file (*.md): $input_file"
+    fi
+
+    output_file="${input_file%.md}.spec.md"
+    prompt_file=$(mktemp)
+    parser_file=$(mktemp)
+    trap 'rm -f "$prompt_file" "$parser_file"' EXIT
+
+    cat >"$prompt_file" <<EOF
+Read the ATN repository documentation needed to write a faithful ATN specification, including README.md, Manual/README.md, Specification/README.md, and any additional files you find necessary.
+
+Then read the Markdown requirements document at: $input_file
+
+Work in this order:
+1. Print exactly: PROGRESS: reading ATN documentation
+2. Read the ATN repository documentation you need.
+3. Print exactly: PROGRESS: reading requirements from $input_file
+4. Read the Markdown requirements document at $input_file.
+5. Extract the natural-language requirements from that file.
+6. Convert them into a clear ATN specification written in Markdown.
+7. Print exactly: PROGRESS: writing specification to $output_file
+8. Write the final Markdown directly to $output_file using the write tool.
+9. Print exactly: DONE: wrote $output_file
+
+Rules:
+- Stay faithful to the source requirements.
+- Make assumptions explicit only when the source is ambiguous.
+- Write the final document to $output_file instead of printing it.
+- Output only the required progress lines on stdout; do not print the specification.
+- Put the generated ATN specification inside Markdown code fences, consistent with the ATN documentation and examples.
+- Do not include commentary about your process beyond the required progress lines.
+EOF
+
+    cat >"$parser_file" <<'PY'
+import json
+import sys
+
+text_buffer = ""
+stderr_needs_newline = False
+
+
+def display_stdout_line(line):
+    if line.startswith("PROGRESS: "):
+        line = line[len("PROGRESS: "):]
+    sys.stdout.write(line + "\n")
+    sys.stdout.flush()
+
+
+def flush_complete_lines():
+    global text_buffer
+    while "\n" in text_buffer:
+        line, text_buffer = text_buffer.split("\n", 1)
+        display_stdout_line(line)
+
+
+def ensure_stderr_line_start():
+    global stderr_needs_newline
+    if stderr_needs_newline:
+        sys.stderr.write("\n")
+        sys.stderr.flush()
+        stderr_needs_newline = False
+
+
+def tool_label(tool_name, args):
+    if not isinstance(args, dict):
+        args = {}
+
+    if tool_name == "read":
+        return f"reading {args.get('path', '')}".rstrip()
+    if tool_name == "write":
+        return f"writing {args.get('path', '')}".rstrip()
+    if tool_name == "edit":
+        return f"editing {args.get('path', '')}".rstrip()
+    if tool_name == "bash":
+        return "running shell command"
+
+    return tool_name or "tool"
+
+
+for line in sys.stdin:
+    try:
+        event = json.loads(line)
+    except json.JSONDecodeError:
+        continue
+
+    event_type = event.get("type")
+
+    if event_type == "message_update":
+        assistant_event = event.get("assistantMessageEvent") or {}
+        if assistant_event.get("type") == "text_delta":
+            text_buffer += assistant_event.get("delta", "")
+            flush_complete_lines()
+
+    elif event_type == "message_end":
+        if text_buffer:
+            display_stdout_line(text_buffer)
+            text_buffer = ""
+
+    elif event_type == "tool_execution_start":
+        tool_name = event.get("toolName", "")
+        args = event.get("args") or {}
+        ensure_stderr_line_start()
+        sys.stderr.write(f"{tool_label(tool_name, args)}\n")
+        sys.stderr.flush()
+
+    elif event_type == "tool_execution_end":
+        tool_name = event.get("toolName", "")
+        args = event.get("args") or {}
+        is_error = event.get("isError")
+
+        if not is_error:
+            sys.stderr.write(".")
+            sys.stderr.flush()
+            stderr_needs_newline = True
+        else:
+            ensure_stderr_line_start()
+            sys.stderr.write(f"{tool_label(tool_name, args)} -> error\n")
+            sys.stderr.flush()
+PY
+
+    echo "running: spec"
+    pi --mode json --no-session "@$prompt_file" | python3 -u "$parser_file"
+    ;;
+  *)
+    die "Unsupported command: $command"
+    ;;
+esac
