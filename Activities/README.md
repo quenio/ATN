@@ -42,6 +42,10 @@ Using ATN to explore scenarios and projected outcomes under defined assumptions.
 
 Using ATN to specify required constraints, behaviors and invariants.
 
+## [Specifications](./Specifications)
+
+Collected external specifications and reference materials relevant to ATN activities.
+
 ## [Synthesis](./Synthesis)
 
 Using ATN to synthesize coherent models and specifications from multiple concepts, constraints or contexts.
