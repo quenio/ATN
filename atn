@@ -56,7 +56,7 @@ PY
 Read the ATN repository documentation needed to write a faithful ATN specification, including README.md, Manual/README.md, Specification/README.md, and any additional files you find necessary.
 
 Also read all applicable AGENTS.md files, including:
-- any AGENTS.md files in the parent-directory hierarchy of the `atn` command itself at: $atn_script_path
+- any AGENTS.md files in the parent-directory hierarchy of the atn command itself at: $atn_script_path
 - any AGENTS.md files in parent directories of $input_file, if present,
 - and any AGENTS.md files in the current working directory hierarchy, if they are also relevant.
 
@@ -65,12 +65,12 @@ Then read the Markdown requirements document at: $input_file
 Work in this order:
 1. Print exactly: PROGRESS: reading ATN documentation
 2. Read the ATN repository documentation you need.
-3. Read all applicable AGENTS.md files for the `atn` command hierarchy, the input file hierarchy, and any other relevant active hierarchy before translating.
+3. Read all applicable AGENTS.md files for the atn command hierarchy, the input file hierarchy, and any other relevant active hierarchy before translating.
 4. Print exactly: PROGRESS: reading requirements from $input_file
 5. Read the Markdown requirements document at $input_file.
 6. Extract the natural-language requirements from that file.
 7. Convert them into a clear ATN specification written in Markdown, following the applicable AGENTS.md instructions.
-8. If AGENTS.md instructions from different applicable hierarchies differ, follow the most specific instructions relevant to the translation task and source location, giving special weight to the `atn` command hierarchy and the source document hierarchy.
+8. If AGENTS.md instructions from different applicable hierarchies differ, follow the most specific instructions relevant to the translation task and source location, giving special weight to the atn command hierarchy and the source document hierarchy.
 9. Print exactly: PROGRESS: writing specification to $output_file
 10. Write the final Markdown directly to $output_file using the write tool.
 11. Print exactly: DONE: wrote $output_file
