@@ -2,6 +2,10 @@
 
 Using ATN to specify required constraints, behaviors and invariants.
 
+## [ModelContextProtocol](./ModelContextProtocol)
+
+A local copy of the Model Context Protocol specification and its generated ATN version.
+
 ## Test: `atn spec`
 
 This folder includes a small test under [`./DocumentApproval`](./DocumentApproval) to exercise `atn spec`.
