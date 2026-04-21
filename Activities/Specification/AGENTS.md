@@ -15,6 +15,8 @@ The goal is to produce an ATN specification that captures the structure of the s
 
 Prefer a structural ATN model over a compliance-checklist ATN model.
 
+If forced to choose, omit secondary prose requirements rather than replacing the subject matter with a forest of sentence-like boolean predicates.
+
 ## Preferred translation approach
 
 When translating a source document into ATN:
@@ -42,6 +44,14 @@ Avoid specifications dominated by predicates like these:
 - `requests_have_non_null_unique_string_or_integer_ids_within_sessions: Protocol -> Boolean`
 
 Those mostly restate prose in predicate names and do not model the domain itself.
+
+More generally, avoid introducing a boolean-valued function when all of the following are true:
+- its name is essentially a full English sentence,
+- it exists only to encode one requirement line,
+- it does not correspond to a domain concept that can vary independently,
+- and it is not needed as a reusable part of multiple assertions.
+
+Do not create a representative object such as `protocol`, `implementation`, `system`, or `document` merely to hang many sentence-like booleans off it.
 
 ## Prefer this pattern
 
@@ -77,6 +87,14 @@ Then express rules as assertions, such as:
 - a resource update notification requires a prior subscription,
 - and so on.
 
+A good ATN translation should let a reader answer:
+- what kinds of things exist in the domain,
+- how those things are related,
+- and what combinations or transitions are valid.
+
+A poor ATN translation only lets a reader answer:
+- which prose requirements were restated.
+
 ## Normative language
 
 Translate the source strength faithfully:
@@ -92,6 +110,8 @@ Do not accidentally strengthen optional or advisory source text into hard constr
 - Use names that reveal structure, not English commentary.
 - Keep assertion names readable and specific.
 - Reuse source terminology where practical.
+- Prefer names like `request_id`, `response_to`, `server_offers_tool`, `task_status`, and `resource_uri`.
+- Avoid names like `requests_must_have_unique_ids_within_a_session` as functions; that belongs as an assertion over simpler names.
 
 ## Protocol and schema documents
 
@@ -100,6 +120,27 @@ When the source document is a protocol, API, or schema:
 - model fields, associations, allowed message forms, and cross-message constraints;
 - distinguish message structure from transport rules and from security guidance;
 - keep the ATN specification centered on the protocol's ontology and invariants.
+
+For a protocol or schema translation, the ATN specification should usually contain most of these before it contains policy-style assertions:
+- participant or actor types,
+- message or document types,
+- identifiers and key value types,
+- structural relations between messages or entities,
+- optional feature or capability relations,
+- state or status types where the source defines stateful behavior.
+
+Security, consent, operational, and transport constraints should usually be written as assertions over this structural model, not as separate sentence-like boolean properties.
+
+## Translation quality checks
+
+Before finalizing a generated specification, check the following:
+- Does the ATN block define the main domain types explicitly?
+- Are most mandatory requirements expressed as assertions over simple structural relations?
+- Would deleting all long sentence-like boolean functions leave the core model mostly intact? If not, the model is too checklist-oriented.
+- For a protocol, can a reader see messages, participants, identifiers, capabilities, states, and their relations?
+- Are `SHOULD` and `MAY` statements being handled without accidentally turning them into hard constraints?
+
+If the answer to the first four questions is not clearly yes, revise the model toward structure.
 
 ## Output shape
 
