@@ -13,13 +13,14 @@ Specification uses ATN in two ways within the [Assurance workflow](../../Workflo
 
 ## Examples
 
+- [`../../Examples/Processes/DocumentApproval`](../../Examples/Processes/DocumentApproval): a small `atn spec` example and test based on a short natural-language requirements document for a document approval workflow.
 - [`../../Examples/Protocols/ModelContextProtocol`](../../Examples/Protocols/ModelContextProtocol): a larger `atn spec` example and test based on the Model Context Protocol specification, including a local source copy and a generated ATN version under [`Examples/Protocols`](../../Examples/Protocols).
 
 ## Tests: `atn spec`
 
 This folder includes two `atn spec` exercises:
 
-- [`./DocumentApproval`](./DocumentApproval): a small end-to-end test based on a short natural-language requirements document for a document approval workflow.
+- [`../../Examples/Processes/DocumentApproval`](../../Examples/Processes/DocumentApproval): a small end-to-end test based on a short natural-language requirements document for a document approval workflow.
 - [`../../Examples/Protocols/ModelContextProtocol`](../../Examples/Protocols/ModelContextProtocol): a larger end-to-end stress test based on the Model Context Protocol specification.
 
 Their purpose is to verify that the command can:

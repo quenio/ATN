@@ -9,6 +9,10 @@ It starts from a short natural-language requirements document for a document app
 - [`Requirements.md`](./Requirements.md): source requirements document
 - [`Requirements.spec.md`](./Requirements.spec.md): generated ATN specification
 
+## Activity Links
+
+- [`Activities/Specification`](../../../Activities/Specification): refers to this folder as a small `atn spec` example and test.
+
 ## Purpose
 
 This test is meant to verify that `atn spec` can:

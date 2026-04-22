@@ -1,6 +1,6 @@
 # Document Approval Requirements Specification
 
-This document converts the natural-language requirements in `Activities/Specification/DocumentApproval/Requirements.md` into an ATN specification.
+This document converts the natural-language requirements in `Examples/Processes/DocumentApproval/Requirements.md` into an ATN specification.
 
 ## Extracted Requirements
 

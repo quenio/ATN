@@ -17,3 +17,7 @@ A minimal ATN specification for a process with an intermediate review stage befo
 ## [ApprovalWithRoles](./ApprovalWithRoles)
 
 A minimal ATN specification for an approval process with explicit participants and role separation.
+
+## [DocumentApproval](./DocumentApproval)
+
+A larger `atn spec` example and test based on a short natural-language requirements document for a document approval workflow.
