@@ -2,4 +2,4 @@
 
 Using ATN to monitor observed behavior and detect deviations from expected constraints.
 
-This activity can be part of the Operations workflow and the Assurance workflow.
+This activity can be part of the Assurance workflow and the Operations workflow.
