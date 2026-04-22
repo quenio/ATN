@@ -4,6 +4,13 @@ Using ATN specifications and designs to derive and organize tests.
 
 This activity can be part of the Assurance workflow and the Engineering workflow.
 
+## ATN Use in Testing
+
+Testing uses ATN in two ways within the [Assurance workflow](../../Workflows/Assurance) and the [Engineering workflow](../../Workflows/Engineering):
+
+- as input, by using ATN specifications and designs to derive what should be checked and what evidence is needed
+- as output, by contributing tests, results, and evidence that confirm, challenge, or refine ATN-guided expectations
+
 ## Sources
 
 Representative sources include:

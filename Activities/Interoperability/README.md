@@ -4,6 +4,13 @@ Using ATN to align interfaces, protocols, schemas and shared meanings.
 
 This activity can be part of the Engineering workflow.
 
+## ATN Use in Interoperability
+
+Interoperability uses ATN in two ways within the [Engineering workflow](../../Workflows/Engineering):
+
+- as input, by using ATN specifications and designs to identify interfaces, protocols, schemas, and shared meanings that must align
+- as output, by contributing coordinated interface definitions, compatibility constraints, and alignment decisions that support downstream ATN-guided realization
+
 ## Sources
 
 Representative sources include:

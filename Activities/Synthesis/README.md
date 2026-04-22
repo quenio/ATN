@@ -4,6 +4,13 @@ Using ATN to synthesize coherent models and specifications from multiple concept
 
 This activity can be part of the Requirements workflow.
 
+## ATN Use in Synthesis
+
+Synthesis uses ATN in two ways within the [Requirements workflow](../../Workflows/Requirements):
+
+- as input, by using ATN concepts, models, and partial specifications as material to be combined into a coherent whole
+- as output, by contributing integrated models and specifications that can feed later ATN activities and workflows
+
 ## Sources
 
 Representative sources include:

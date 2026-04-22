@@ -4,6 +4,13 @@ Using ATN to specify required constraints, behaviors and invariants that serve a
 
 This activity can be part of the Assurance workflow, the Engineering workflow, and the Requirements workflow.
 
+## ATN Use in Specification
+
+Specification uses ATN in two ways within the [Assurance workflow](../../Workflows/Assurance), the [Engineering workflow](../../Workflows/Engineering), and the [Requirements workflow](../../Workflows/Requirements):
+
+- as input, by using ATN concepts, models, and source requirements to define required constraints, behaviors, and invariants precisely
+- as output, by contributing ATN specifications that serve as primary inputs to downstream activities including Design and Testing
+
 ## Examples
 
 - [`../../Examples/Protocols/ModelContextProtocol`](../../Examples/Protocols/ModelContextProtocol): a larger `atn spec` example and test based on the Model Context Protocol specification, including a local source copy and a generated ATN version under [`Examples/Protocols`](../../Examples/Protocols).

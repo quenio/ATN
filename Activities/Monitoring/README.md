@@ -4,6 +4,13 @@ Using ATN to monitor observed behavior and detect deviations from expected const
 
 This activity can be part of the Assurance workflow and the Operations workflow.
 
+## ATN Use in Monitoring
+
+Monitoring uses ATN in two ways within the [Assurance workflow](../../Workflows/Assurance) and the [Operations workflow](../../Workflows/Operations):
+
+- as input, by using ATN specifications, designs, and expected constraints as the basis for observing actual behavior
+- as output, by contributing observations, deviations, and evidence that can trigger ATN-guided analysis, correction, and refinement
+
 ## Sources
 
 Representative sources include:

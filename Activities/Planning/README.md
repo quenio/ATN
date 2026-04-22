@@ -4,6 +4,13 @@ Using ATN to define goals, constraints and admissible actions for coordinated ex
 
 This activity can be part of the Operations workflow.
 
+## ATN Use in Planning
+
+Planning uses ATN in two ways within the [Operations workflow](../../Workflows/Operations):
+
+- as input, by using ATN models, constraints, goals, and admissible actions to frame possible courses of execution
+- as output, by contributing plans that organize ATN-constrained actions and decisions into coordinated operational paths
+
 ## Sources
 
 Representative sources include:

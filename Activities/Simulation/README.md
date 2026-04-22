@@ -4,6 +4,13 @@ Using ATN to explore scenarios and projected outcomes under defined assumptions.
 
 This activity can be part of the Operations workflow.
 
+## ATN Use in Simulation
+
+Simulation uses ATN in two ways within the [Operations workflow](../../Workflows/Operations):
+
+- as input, by using ATN models, specifications, and assumptions to define the structures and rules under which scenarios are explored
+- as output, by contributing projected outcomes, scenario comparisons, and insights that can inform later ATN-guided decisions and revisions
+
 ## Sources
 
 Representative sources include:

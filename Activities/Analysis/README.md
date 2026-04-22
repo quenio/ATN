@@ -4,6 +4,13 @@ Using ATN to analyze implications, consistency, completeness and alternatives.
 
 This activity can be part of the Assurance workflow, the Operations workflow, and the Requirements workflow.
 
+## ATN Use in Analysis
+
+Analysis uses ATN in two ways within the [Assurance workflow](../../Workflows/Assurance), the [Operations workflow](../../Workflows/Operations), and the [Requirements workflow](../../Workflows/Requirements):
+
+- as input, by using ATN models, specifications, and related artifacts to examine implications, consistency, completeness, and alternatives
+- as output, by contributing analytical findings, identified gaps, tensions, and candidate refinements that can feed back into ATN activities and workflows
+
 ## Sources
 
 Representative sources include:

@@ -4,6 +4,13 @@ Using ATN to define and manage policies, controls, roles and decision rules.
 
 This activity can be part of the Assurance workflow, the Engineering workflow, and the Operations workflow.
 
+## ATN Use in Governance
+
+Governance uses ATN in two ways within the [Assurance workflow](../../Workflows/Assurance), the [Engineering workflow](../../Workflows/Engineering), and the [Operations workflow](../../Workflows/Operations):
+
+- as input, by using ATN models, specifications, designs, and operational artifacts to identify the structures and constraints that governance must control
+- as output, by contributing policies, controls, roles, and decision rules that shape how ATN-guided work is performed and evaluated
+
 ## Sources
 
 Representative sources include:

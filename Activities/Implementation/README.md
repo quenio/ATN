@@ -4,6 +4,13 @@ Using ATN specifications and designs to guide and constrain implementations.
 
 This activity can be part of the Engineering workflow and the Operations workflow.
 
+## ATN Use in Implementation
+
+Implementation uses ATN in two ways within the [Engineering workflow](../../Workflows/Engineering) and the [Operations workflow](../../Workflows/Operations):
+
+- as input, by using ATN specifications and designs to guide what must be built and which constraints implementation must preserve
+- as output, by contributing realized artifacts whose structure and behavior can be checked against ATN-guided expectations and fed into later activities
+
 ## Sources
 
 Representative sources include:

@@ -4,6 +4,13 @@ Using ATN to model domain concepts, structures and relationships that can serve 
 
 This activity can be part of the Requirements workflow.
 
+## ATN Use in Modeling
+
+Modeling uses ATN in two ways within the [Requirements workflow](../../Workflows/Requirements):
+
+- as input, by using ATN concepts and notation to represent domain concepts, structures, and relationships clearly
+- as output, by contributing models that can serve as structured inputs to later ATN activities, especially Specification
+
 ## Sources
 
 Representative sources include:
