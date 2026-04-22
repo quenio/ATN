@@ -2,15 +2,15 @@
 
 Using ATN to organize related activities into repeatable paths of work.
 
-## [ConformanceAssurance](./ConformanceAssurance)
+## [Assurance](./Assurance)
 
 A workflow for checking consistency between intent, realization and observed behavior.
 
-## [ConstraintFormulation](./ConstraintFormulation)
+## [Formulation](./Formulation)
 
 A workflow for turning domain understanding into precise, testable constraints.
 
-## [OperationalCoordination](./OperationalCoordination)
+## [Operations](./Operations)
 
 A workflow for defining intended action, exploring scenarios, executing under constraints and observing outcomes.
 

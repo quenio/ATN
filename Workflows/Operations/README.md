@@ -1,4 +1,4 @@
-# ATN Workflow: Operational Coordination
+# ATN Workflow: Operations
 
 A workflow for defining intended action, exploring scenarios, executing under constraints and observing outcomes.
 

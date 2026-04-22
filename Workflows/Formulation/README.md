@@ -1,4 +1,4 @@
-# ATN Workflow: Constraint Formulation
+# ATN Workflow: Formulation
 
 A workflow for turning domain understanding into precise, testable constraints.
 

@@ -2,4 +2,4 @@
 
 Using ATN to synthesize coherent models and specifications from multiple concepts, constraints or contexts.
 
-This activity can be part of the Constraint Formulation Workflow.
+This activity can be part of the Formulation workflow.

@@ -1,4 +1,4 @@
-# ATN Workflow: Conformance Assurance
+# ATN Workflow: Assurance
 
 A workflow for checking consistency between intent, realization and observed behavior.
 
