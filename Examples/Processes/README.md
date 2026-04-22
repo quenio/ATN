@@ -20,4 +20,4 @@ A minimal ATN specification for an approval process with explicit participants a
 
 ## [DocumentApproval](./DocumentApproval)
 
-A larger `atn spec` example and test based on a short natural-language requirements document for a document approval workflow.
+A larger `./atn spec` example and test based on a short natural-language requirements document for a document approval workflow.

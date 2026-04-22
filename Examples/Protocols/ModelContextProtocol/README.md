@@ -9,5 +9,5 @@ This folder contains local copies of published Model Context Protocol (MCP) spec
 
 ## Activity Links
 
-- [Specification](../../../Activities/Specification): refers to this folder as a larger `atn spec` example and test.
+- [Specification](../../../Activities/Specification): refers to this folder as a larger `./atn spec` example and test.
 - [Design](../../../Activities/Design): refers to this folder as a larger cross-activity example that can feed `./atn design`.
