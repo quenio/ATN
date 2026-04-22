@@ -13,5 +13,6 @@ After making changes to the repository, commit them and push them to `origin mai
 - Keep changes consistent with the style and organization already present in the repo.
 - When referring to a repository document, workflow, activity, or similar internal artifact by name, link to it using a relative reference.
 - Use concise link captions rather than displaying the full relative path; prefer the document or folder name as the link text.
+- When referring to repository commands, use consistent invocation notation; if a command is written with `./`, use that form everywhere for the same command.
 - Follow title style conventions: use capitalized noun phrases; prepositions and conjunctions may be lowercase; avoid articles and determiners; code/data symbols should preserve original casing between backticks.
 - List workflows in alphabetical order wherever they are enumerated in the repository.
