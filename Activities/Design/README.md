@@ -9,7 +9,10 @@ This activity can be part of the Assurance workflow and the Engineering workflow
 ## Tooling
 
 - `./atn design <markdown_file.spec.md>` generates `<markdown_file.design.md>` from an ATN specification.
-- [`Examples/Protocols/ModelContextProtocol`](../../Examples/Protocols/ModelContextProtocol) provides a larger cross-activity example that can be used as input to `./atn design` after running `./atn spec`.
+
+## Examples
+
+- [`../../Examples/Protocols/ModelContextProtocol`](../../Examples/Protocols/ModelContextProtocol): a larger cross-activity example that can be used as input to `./atn design` after running `./atn spec`.
 
 ## ATN Use in Design
 
