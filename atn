@@ -5,9 +5,11 @@ usage() {
   cat >&2 <<'EOF'
 Usage:
   atn spec <markdown_file.md>
+  atn design <markdown_file.spec.md>
 
 Commands:
-  spec    Generate <markdown_file.spec.md> from natural-language requirements in <markdown_file.md>
+  spec     Generate <markdown_file.spec.md> from natural-language requirements in <markdown_file.md>
+  design   Generate <markdown_file.design.md> from an ATN specification in <markdown_file.spec.md>
 EOF
 }
 
@@ -21,71 +23,17 @@ if [[ $# -lt 1 ]]; then
   exit 1
 fi
 
-command="$1"
-shift
-
-case "$command" in
-  spec)
-    if [[ $# -ne 1 ]]; then
-      usage
-      exit 1
-    fi
-
-    input_file="$1"
-
-    if [[ ! -f "$input_file" ]]; then
-      die "Input file not found: $input_file"
-    fi
-
-    if [[ "$input_file" != *.md ]]; then
-      die "Input file must be a Markdown file (*.md): $input_file"
-    fi
-
-    output_file="${input_file%.md}.spec.md"
-    atn_script_path="$(python3 - <<'PY' "${BASH_SOURCE[0]}"
+atn_script_path="$(python3 - <<'PY' "${BASH_SOURCE[0]}"
 from pathlib import Path
 import sys
 print(Path(sys.argv[1]).resolve())
 PY
 )"
-    prompt_file=$(mktemp)
-    parser_file=$(mktemp)
-    trap 'rm -f "$prompt_file" "$parser_file"' EXIT
 
-    cat >"$prompt_file" <<EOF
-Read the ATN repository documentation needed to write a faithful ATN specification, including README.md, Manual/README.md, Specification/README.md, and any additional files you find necessary.
+parser_file=$(mktemp)
+trap 'rm -f "$parser_file" "${prompt_file:-}"' EXIT
 
-Also read all applicable AGENTS.md files, including:
-- any AGENTS.md files in the parent-directory hierarchy of the atn command itself at: $atn_script_path
-- any AGENTS.md files in parent directories of $input_file, if present,
-- and any AGENTS.md files in the current working directory hierarchy, if they are also relevant.
-
-Then read the Markdown requirements document at: $input_file
-
-Work in this order:
-1. Print exactly: PROGRESS: reading ATN documentation
-2. Read the ATN repository documentation you need.
-3. Read all applicable AGENTS.md files for the atn command hierarchy, the input file hierarchy, and any other relevant active hierarchy before translating.
-4. Print exactly: PROGRESS: reading requirements from $input_file
-5. Read the Markdown requirements document at $input_file.
-6. Extract the natural-language requirements from that file.
-7. Convert them into a clear ATN specification written in Markdown, following the applicable AGENTS.md instructions.
-8. If AGENTS.md instructions from different applicable hierarchies differ, follow the most specific instructions relevant to the translation task and source location, giving special weight to the atn command hierarchy and the source document hierarchy.
-9. Print exactly: PROGRESS: writing specification to $output_file
-10. Write the final Markdown directly to $output_file using the write tool.
-11. Print exactly: DONE: wrote $output_file
-
-Rules:
-- Stay faithful to the source requirements.
-- Make assumptions explicit only when the source is ambiguous.
-- Follow applicable AGENTS.md instructions, especially for translation style and modeling approach.
-- Write the final document to $output_file instead of printing it.
-- Output only the required progress lines on stdout; do not print the specification.
-- Put the generated ATN specification inside Markdown code fences, consistent with the ATN documentation and examples.
-- Do not include commentary about your process beyond the required progress lines.
-EOF
-
-    cat >"$parser_file" <<'PY'
+cat >"$parser_file" <<'PY'
 import json
 import sys
 
@@ -172,8 +120,122 @@ for line in sys.stdin:
             sys.stderr.flush()
 PY
 
-    echo "running: spec"
-    pi --mode json --no-session "@$prompt_file" | python3 -u "$parser_file"
+run_pi_command() {
+  local command_name="$1"
+  prompt_file=$(mktemp)
+  cat >"$prompt_file"
+  echo "running: $command_name"
+  pi --mode json --no-session "@$prompt_file" | python3 -u "$parser_file"
+  rm -f "$prompt_file"
+  prompt_file=""
+}
+
+command="$1"
+shift
+
+case "$command" in
+  spec)
+    if [[ $# -ne 1 ]]; then
+      usage
+      exit 1
+    fi
+
+    input_file="$1"
+
+    if [[ ! -f "$input_file" ]]; then
+      die "Input file not found: $input_file"
+    fi
+
+    if [[ "$input_file" != *.md ]]; then
+      die "Input file must be a Markdown file (*.md): $input_file"
+    fi
+
+    output_file="${input_file%.md}.spec.md"
+
+    run_pi_command spec <<EOF
+Read the ATN repository documentation needed to write a faithful ATN specification, including README.md, Manual/README.md, Specification/README.md, and any additional files you find necessary.
+
+Also read all applicable AGENTS.md files, including:
+- any AGENTS.md files in the parent-directory hierarchy of the atn command itself at: $atn_script_path
+- any AGENTS.md files in parent directories of $input_file, if present,
+- and any AGENTS.md files in the current working directory hierarchy, if they are also relevant.
+
+Then read the Markdown requirements document at: $input_file
+
+Work in this order:
+1. Print exactly: PROGRESS: reading ATN documentation
+2. Read the ATN repository documentation you need.
+3. Read all applicable AGENTS.md files for the atn command hierarchy, the input file hierarchy, and any other relevant active hierarchy before translating.
+4. Print exactly: PROGRESS: reading requirements from $input_file
+5. Read the Markdown requirements document at $input_file.
+6. Extract the natural-language requirements from that file.
+7. Convert them into a clear ATN specification written in Markdown, following the applicable AGENTS.md instructions.
+8. If AGENTS.md instructions from different applicable hierarchies differ, follow the most specific instructions relevant to the translation task and source location, giving special weight to the atn command hierarchy and the source document hierarchy.
+9. Print exactly: PROGRESS: writing specification to $output_file
+10. Write the final Markdown directly to $output_file using the write tool.
+11. Print exactly: DONE: wrote $output_file
+
+Rules:
+- Stay faithful to the source requirements.
+- Make assumptions explicit only when the source is ambiguous.
+- Follow applicable AGENTS.md instructions, especially for translation style and modeling approach.
+- Write the final document to $output_file instead of printing it.
+- Output only the required progress lines on stdout; do not print the specification.
+- Put the generated ATN specification inside Markdown code fences, consistent with the ATN documentation and examples.
+- Do not include commentary about your process beyond the required progress lines.
+EOF
+    ;;
+  design)
+    if [[ $# -ne 1 ]]; then
+      usage
+      exit 1
+    fi
+
+    input_file="$1"
+
+    if [[ ! -f "$input_file" ]]; then
+      die "Input file not found: $input_file"
+    fi
+
+    if [[ "$input_file" != *.spec.md ]]; then
+      die "Input file must be an ATN specification Markdown file (*.spec.md): $input_file"
+    fi
+
+    output_file="${input_file%.spec.md}.design.md"
+
+    run_pi_command design <<EOF
+Read the ATN repository documentation needed to write a faithful ATN design document, including README.md, Manual/README.md, Specification/README.md, Activities/Design/README.md, Workflows/Engineering/README.md, and any additional files you find necessary.
+
+Also read all applicable AGENTS.md files, including:
+- any AGENTS.md files in the parent-directory hierarchy of the atn command itself at: $atn_script_path
+- any AGENTS.md files in parent directories of $input_file, if present,
+- and any AGENTS.md files in the current working directory hierarchy, if they are also relevant.
+
+Then read the ATN specification document at: $input_file
+
+Work in this order:
+1. Print exactly: PROGRESS: reading ATN documentation
+2. Read the ATN repository documentation you need.
+3. Read all applicable AGENTS.md files for the atn command hierarchy, the input file hierarchy, and any other relevant active hierarchy before translating.
+4. Print exactly: PROGRESS: reading specification from $input_file
+5. Read the ATN specification document at $input_file.
+6. Identify the specified constraints, types, constants, relations, and assertions that must shape design.
+7. Convert them into a clear ATN design written in Markdown, following the applicable AGENTS.md instructions.
+8. Structure the design around implementable architectures, interfaces, component responsibilities, and design decisions that preserve the ATN specification.
+9. If AGENTS.md instructions from different applicable hierarchies differ, follow the most specific instructions relevant to the translation task and source location, giving special weight to the atn command hierarchy and the source document hierarchy.
+10. Print exactly: PROGRESS: writing design to $output_file
+11. Write the final Markdown directly to $output_file using the write tool.
+12. Print exactly: DONE: wrote $output_file
+
+Rules:
+- Stay faithful to the input ATN specification.
+- Use the specification as the primary input to design.
+- Produce ATN output in Markdown code fences, consistent with the ATN documentation and examples.
+- Make assumptions explicit only when the specification leaves implementation-relevant structure ambiguous.
+- Write the final document to $output_file instead of printing it.
+- Output only the required progress lines on stdout; do not print the design.
+- Do not include commentary about your process beyond the required progress lines.
+EOF
     ;;
   *)
     die "Unsupported command: $command"

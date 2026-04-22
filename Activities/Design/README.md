@@ -6,6 +6,10 @@ ATN specifications are primary inputs to this activity.
 
 This activity can be part of the Assurance workflow and the Engineering workflow.
 
+## Tooling
+
+- `./atn design <markdown_file.spec.md>` generates `<markdown_file.design.md>` from an ATN specification.
+
 ## ATN Use in Design
 
 Design uses ATN in two ways within the [Engineering workflow](../../Workflows/Engineering):
