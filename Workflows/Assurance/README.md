@@ -24,7 +24,12 @@ flowchart LR
     Monitoring --> Analysis
     Analysis --> Governance
     Governance --> Documentation
+    Testing -.-> Design
+    Monitoring -.-> Specification
+    Analysis -.-> Design
 ```
+
+The primary flow checks intent against realization and behavior, but assurance findings often propagate backward into revised designs and, when needed, revised specifications.
 
 ## Sources
 

@@ -20,7 +20,12 @@ flowchart LR
     Synthesis --> Analysis
     Analysis --> Specification
     Specification --> Documentation
+    Specification -.-> Analysis
+    Analysis -.-> Synthesis
+    Synthesis -.-> Modeling
 ```
+
+The primary flow moves forward toward documented requirements, but clarification and conflict resolution often propagate backward from specification into analysis, synthesis, and earlier domain modeling.
 
 ## Sources
 

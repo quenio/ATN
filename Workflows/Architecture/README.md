@@ -25,7 +25,12 @@ flowchart LR
     Governance --> Implementation
     Implementation --> Testing
     Testing --> Documentation
+    Testing -.-> Implementation
+    Implementation -.-> Design
+    Design -.-> Specification
 ```
+
+The primary flow moves from specification into realized structure, but implementation and testing frequently force revision of design decisions and sometimes of the originating specification.
 
 ## Sources
 

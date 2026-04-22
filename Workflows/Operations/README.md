@@ -24,7 +24,12 @@ flowchart LR
     Implementation --> Monitoring
     Monitoring --> Analysis
     Analysis --> Documentation
+    Analysis -.-> Simulation
+    Monitoring -.-> Planning
+    Governance -.-> Planning
 ```
+
+The primary flow moves from planning through execution and observation, but operational feedback often sends work back to planning, simulation, and governing constraints.
 
 ## Sources
 
