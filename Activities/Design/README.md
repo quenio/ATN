@@ -19,7 +19,7 @@ Design uses ATN in two ways within the [Engineering workflow](../../Workflows/En
 
 ## Examples
 
-- [`../../Examples/Protocols/ModelContextProtocol`](../../Examples/Protocols/ModelContextProtocol): a larger cross-activity example that can be used as input to `./atn design` after running `./atn spec`.
+- [ModelContextProtocol](../../Examples/Protocols/ModelContextProtocol): a larger cross-activity example that can be used as input to `./atn design` after running `./atn spec`.
 
 ## Sources
 
