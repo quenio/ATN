@@ -2,16 +2,6 @@
 
 A workflow for turning domain understanding into precise, testable constraints.
 
-## Sources
-
-This workflow name is corroborated by common systems engineering usage in which specification and requirements definition are recognized life-cycle activities preceding design and implementation.
-
-Representative sources include:
-
-- NASA Systems Engineering Handbook, which distinguishes stakeholder expectations, technical requirements definition, and system design processes
-- DoD Systems Engineering Guidebook, which treats stakeholder requirements definition and requirements analysis as core technical processes
-- SEBoK guidance on applying life cycle processes, which identifies concept definition and system requirements definition as linked life-cycle processes
-
 ## Activities
 
 - [Modeling](../../Activities/Modeling)
@@ -31,3 +21,13 @@ flowchart LR
     Analysis --> Specification
     Specification --> Documentation
 ```
+
+## Sources
+
+This workflow name is corroborated by common systems engineering usage in which specification and requirements definition are recognized life-cycle activities preceding design and implementation.
+
+Representative sources include:
+
+- NASA Systems Engineering Handbook, which distinguishes stakeholder expectations, technical requirements definition, and system design processes
+- DoD Systems Engineering Guidebook, which treats stakeholder requirements definition and requirements analysis as core technical processes
+- SEBoK guidance on applying life cycle processes, which identifies concept definition and system requirements definition as linked life-cycle processes

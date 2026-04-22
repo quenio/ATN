@@ -2,16 +2,6 @@
 
 A workflow for defining intended action, exploring scenarios, executing under constraints, and observing outcomes.
 
-## Sources
-
-This workflow name is corroborated by common life-cycle usage in which planning, simulation, execution, monitoring, and operational support form an operations-oriented thread.
-
-Representative sources include:
-
-- NASA Systems Engineering Handbook, which identifies operations and sustainment as a distinct life-cycle phase supported by planning, simulation, implementation, monitoring, and analysis
-- DoD Systems Engineering Guidebook, which highlights operations, sustainment, mission execution, and technical assessment across the life cycle
-- SEBoK guidance on applying life cycle processes, which emphasizes deployment, use, sustainment, and feedback across life-cycle processes
-
 ## Activities
 
 - [Planning](../../Activities/Planning)
@@ -35,3 +25,13 @@ flowchart LR
     Monitoring --> Analysis
     Analysis --> Documentation
 ```
+
+## Sources
+
+This workflow name is corroborated by common life-cycle usage in which planning, simulation, execution, monitoring, and operational support form an operations-oriented thread.
+
+Representative sources include:
+
+- NASA Systems Engineering Handbook, which identifies operations and sustainment as a distinct life-cycle phase supported by planning, simulation, implementation, monitoring, and analysis
+- DoD Systems Engineering Guidebook, which highlights operations, sustainment, mission execution, and technical assessment across the life cycle
+- SEBoK guidance on applying life cycle processes, which emphasizes deployment, use, sustainment, and feedback across life-cycle processes
