@@ -2,13 +2,17 @@
 
 Examples of specifications written in ATN.
 
+## [Processes](./Processes)
+
+Examples that specify processes and workflows.
+
 ## [Programs](./Programs)
 
 Examples that specify the behavior and structure of programs.
 
-## [Processes](./Processes)
+## [Protocols](./Protocols)
 
-Examples that specify processes and workflows.
+Examples that specify protocols and their constraints.
 
 ## [Systems](./Systems)
 
