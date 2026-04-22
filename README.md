@@ -18,6 +18,10 @@ Examples of specifications written in ATN.
 
 Using ATN to support specification-oriented work.
 
+## [Workflows](./Workflows)
+
+Using ATN to organize related activities into repeatable paths of work.
+
 ## [Applications](./Applications)
 
 Using ATN in concrete domains where precise specifications are valuable.

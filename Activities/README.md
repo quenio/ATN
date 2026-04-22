@@ -56,50 +56,6 @@ Using ATN to synthesize coherent models and specifications from multiple concept
 
 Using ATN specifications and designs to derive and organize tests.
 
-## Proposed Workflows
+## Related Workflows
 
-### Constraint Formulation Workflow
-
-A workflow for turning domain understanding into precise, testable constraints.
-
-- [Modeling](./Modeling)
-- [Synthesis](./Synthesis)
-- [Analysis](./Analysis)
-- [Specification](./Specification)
-- [Documentation](./Documentation)
-
-### Realization Workflow
-
-A workflow for refining specifications into implementable structures and building from them.
-
-- [Specification](./Specification)
-- [Design](./Design)
-- [Interoperability](./Interoperability)
-- [Governance](./Governance)
-- [Implementation](./Implementation)
-- [Testing](./Testing)
-- [Documentation](./Documentation)
-
-### Operational Coordination Workflow
-
-A workflow for defining intended action, exploring scenarios, executing under constraints and observing outcomes.
-
-- [Planning](./Planning)
-- [Simulation](./Simulation)
-- [Governance](./Governance)
-- [Implementation](./Implementation)
-- [Monitoring](./Monitoring)
-- [Analysis](./Analysis)
-- [Documentation](./Documentation)
-
-### Conformance Assurance Workflow
-
-A workflow for checking consistency between intent, realization and observed behavior.
-
-- [Specification](./Specification)
-- [Design](./Design)
-- [Testing](./Testing)
-- [Monitoring](./Monitoring)
-- [Analysis](./Analysis)
-- [Governance](./Governance)
-- [Documentation](./Documentation)
+See [Workflows](../Workflows) for grouped paths of work that use these activities.
