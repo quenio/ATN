@@ -8,15 +8,10 @@ This activity can be part of the Assurance workflow and the Engineering workflow
 
 ## ATN Use in Design
 
-In ATN's Engineering workflow, Design leverages ATN by transforming ATN specifications into implementable architectures, interfaces, and responsibilities that preserve constraints and guide interoperability, governance, implementation, testing, and documentation.
+Design uses ATN in two ways within the Engineering workflow:
 
-Concretely, Design leverages ATN by:
-
-- taking ATN specifications as primary inputs
-- refining specifications into implementable structures, including architectures, interfaces, component responsibilities, and design patterns
-- preserving specified constraints while translating them into realizable form
-- bridging Specification and downstream engineering work, especially Interoperability, Governance, and Implementation
-- supporting iteration as Implementation and Testing reveal the need to refine Design and sometimes Specification
+- as input, by using ATN specifications to define the constraints and intended behavior that design must refine into implementable structures
+- as output, by contributing architectures, interfaces, responsibilities, and related design decisions that support downstream ATN activities including Interoperability, Governance, Implementation, Testing, and Documentation
 
 ## Sources
 
