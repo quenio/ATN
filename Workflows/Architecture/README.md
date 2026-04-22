@@ -33,6 +33,6 @@ This workflow name is corroborated by common systems engineering usage in which 
 
 Representative sources include:
 
-- NASA Systems Engineering Handbook, which identifies architecture definition, logical decomposition, design solution definition, implementation, and integration as distinct but connected processes
-- DoD Systems Engineering Guidebook, which identifies architecture design, implementation, integration, verification, and technical reviews as core activities
-- SEBoK guidance on applying life cycle processes, which describes moving from problem definition to solution synthesis through architecture and realization activities
+- [NASA Systems Engineering Handbook](https://www.nasa.gov/wp-content/uploads/2018/09/nasa_systems_engineering_handbook_0.pdf), which identifies `Logical Decomposition Process`, `Design Solution Definition Process`, `Product Implementation Process`, and `Product Integration Process`
+- [DoD Systems Engineering Guidebook](https://www.cto.mil/wp-content/uploads/2024/05/SE-Guidebook-Feb2022.pdf), which identifies `Architecture Design Process`, `Implementation Process`, `Integration Process`, and `Technical Reviews and Audits`
+- [SEBoK: Applying Life Cycle Processes](https://sebokwiki.org/wiki/Applying_Life_Cycle_Processes), which discusses architecture within system definition and relates solution synthesis to architecture, integration, verification, validation, operation, and maintenance

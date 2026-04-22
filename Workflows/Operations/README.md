@@ -32,6 +32,6 @@ This workflow name is corroborated by common life-cycle usage in which planning,
 
 Representative sources include:
 
-- NASA Systems Engineering Handbook, which identifies operations and sustainment as a distinct life-cycle phase supported by planning, simulation, implementation, monitoring, and analysis
-- DoD Systems Engineering Guidebook, which highlights operations, sustainment, mission execution, and technical assessment across the life cycle
-- SEBoK guidance on applying life cycle processes, which emphasizes deployment, use, sustainment, and feedback across life-cycle processes
+- [NASA Systems Engineering Handbook](https://www.nasa.gov/wp-content/uploads/2018/09/nasa_systems_engineering_handbook_0.pdf), which identifies `Project Phase E: Operations` and treats operations as a distinct life-cycle area connected to analysis, validation, and sustainment concerns
+- [DoD Systems Engineering Guidebook](https://www.cto.mil/wp-content/uploads/2024/05/SE-Guidebook-Feb2022.pdf), which defines systems engineering as covering specification, design, development, realization, technical management, `operations`, and retirement, and discusses operational testing and operations and sustainment
+- [SEBoK: Applying Life Cycle Processes](https://sebokwiki.org/wiki/Applying_Life_Cycle_Processes), which emphasizes deployment, use, sustainment, operation, maintenance, and feedback across life-cycle processes

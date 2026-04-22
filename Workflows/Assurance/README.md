@@ -32,6 +32,6 @@ This workflow name is corroborated by common engineering usage in which assuranc
 
 Representative sources include:
 
-- NASA Systems Engineering Handbook, which distinguishes verification, validation, technical assessment, and governance-related controls across realization and operations
-- DoD Systems Engineering Guidebook, which ties technical assessment, verification, validation, risk management, and system safety to assurance of delivered capability
-- SEBoK guidance on applying life cycle processes, which emphasizes concurrency between design, verification, validation, deployment, and operational feedback
+- [NASA Systems Engineering Handbook](https://www.nasa.gov/wp-content/uploads/2018/09/nasa_systems_engineering_handbook_0.pdf), which identifies `Product Verification Process` and `Product Validation Process` and describes verification and validation as distinct but linked activities
+- [DoD Systems Engineering Guidebook](https://www.cto.mil/wp-content/uploads/2024/05/SE-Guidebook-Feb2022.pdf), which identifies `Verification Process`, `Validation Process`, and `Technical Reviews and Audits` as core systems engineering processes
+- [SEBoK: Applying Life Cycle Processes](https://sebokwiki.org/wiki/Applying_Life_Cycle_Processes), which emphasizes concurrency and iteration among design, integration, verification, validation, deployment, operation, and maintenance activities
