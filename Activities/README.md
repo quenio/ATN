@@ -1,10 +1,14 @@
 # ATN Activities
 
-Using ATN to support modeling, analysis, specification and related work.
+Using ATN to support modeling, analysis, design, specification and related work.
 
 ## [Analysis](./Analysis)
 
 Using ATN to analyze implications, consistency, completeness and alternatives.
+
+## [Design](./Design)
+
+Using ATN to refine specifications into implementable architectures, interfaces and component responsibilities while preserving constraints.
 
 ## [Documentation](./Documentation)
 
