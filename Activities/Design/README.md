@@ -6,7 +6,7 @@ ATN specifications are primary inputs to this activity.
 
 This activity can be part of the Assurance workflow and the Engineering workflow.
 
-## ATN Leverage in Design
+## ATN Use in Design
 
 In ATN's Engineering workflow, Design leverages ATN by transforming ATN specifications into implementable architectures, interfaces, and responsibilities that preserve constraints and guide interoperability, governance, implementation, testing, and documentation.
 
