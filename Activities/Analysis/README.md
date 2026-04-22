@@ -2,4 +2,4 @@
 
 Using ATN to analyze implications, consistency, completeness and alternatives.
 
-This activity can be part of the Specification workflow, the Planning and execution workflow, and the Assurance workflow.
+This activity can be part of the Constraint formulation workflow, the Operational coordination workflow, and the Conformance assurance workflow.

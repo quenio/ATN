@@ -58,7 +58,7 @@ Using ATN specifications and designs to derive and organize tests.
 
 ## Proposed workflows
 
-### Specification workflow
+### Constraint formulation workflow
 
 A workflow for turning domain understanding into precise, testable constraints.
 
@@ -68,7 +68,7 @@ A workflow for turning domain understanding into precise, testable constraints.
 - [Specification](./Specification)
 - [Documentation](./Documentation)
 
-### Design and implementation workflow
+### Realization workflow
 
 A workflow for refining specifications into implementable structures and building from them.
 
@@ -80,7 +80,7 @@ A workflow for refining specifications into implementable structures and buildin
 - [Testing](./Testing)
 - [Documentation](./Documentation)
 
-### Planning and execution workflow
+### Operational coordination workflow
 
 A workflow for defining intended action, exploring scenarios, executing under constraints and observing outcomes.
 
@@ -92,7 +92,7 @@ A workflow for defining intended action, exploring scenarios, executing under co
 - [Analysis](./Analysis)
 - [Documentation](./Documentation)
 
-### Assurance workflow
+### Conformance assurance workflow
 
 A workflow for checking consistency between intent, realization and observed behavior.
 

@@ -2,4 +2,4 @@
 
 Using ATN to align interfaces, protocols, schemas and shared meanings.
 
-This activity can be part of the Design and implementation workflow.
+This activity can be part of the Realization workflow.
