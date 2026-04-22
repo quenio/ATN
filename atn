@@ -29,6 +29,9 @@ import sys
 print(Path(sys.argv[1]).resolve())
 PY
 )"
+atn_repo_root="$(dirname "$atn_script_path")"
+spec_agents_path="$atn_repo_root/Activities/Specification/AGENTS.md"
+design_agents_path="$atn_repo_root/Activities/Design/AGENTS.md"
 
 parser_file=$(mktemp)
 trap 'rm -f "$parser_file" "${prompt_file:-}"' EXIT
@@ -156,6 +159,7 @@ case "$command" in
 Read the ATN repository documentation needed to write a faithful ATN specification, including README.md, Manual/README.md, Specification/README.md, and any additional files you find necessary.
 
 Also read all applicable AGENTS.md files, including:
+- the Specification activity instructions at: $spec_agents_path
 - any AGENTS.md files in the parent-directory hierarchy of the atn command itself at: $atn_script_path
 - any AGENTS.md files in parent directories of $input_file, if present,
 - and any AGENTS.md files in the current working directory hierarchy, if they are also relevant.
@@ -165,7 +169,7 @@ Then read the Markdown requirements document at: $input_file
 Work in this order:
 1. Print exactly: PROGRESS: reading ATN documentation
 2. Read the ATN repository documentation you need.
-3. Read all applicable AGENTS.md files for the atn command hierarchy, the input file hierarchy, and any other relevant active hierarchy before translating.
+3. Read all applicable AGENTS.md files for the Specification activity, the atn command hierarchy, the input file hierarchy, and any other relevant active hierarchy before translating.
 4. Print exactly: PROGRESS: reading requirements from $input_file
 5. Read the Markdown requirements document at $input_file.
 6. Extract the natural-language requirements from that file.
@@ -178,7 +182,7 @@ Work in this order:
 Rules:
 - Stay faithful to the source requirements.
 - Make assumptions explicit only when the source is ambiguous.
-- Follow applicable AGENTS.md instructions, especially for translation style and modeling approach.
+- Follow applicable AGENTS.md instructions, especially the Specification activity instructions and any more specific source-local instructions.
 - Write the final document to $output_file instead of printing it.
 - Output only the required progress lines on stdout; do not print the specification.
 - Put the generated ATN specification inside Markdown code fences, consistent with the ATN documentation and examples.
@@ -207,6 +211,7 @@ EOF
 Read the ATN repository documentation needed to write a faithful ATN design document, including README.md, Manual/README.md, Specification/README.md, Activities/Design/README.md, Workflows/Engineering/README.md, and any additional files you find necessary.
 
 Also read all applicable AGENTS.md files, including:
+- the Design activity instructions at: $design_agents_path
 - any AGENTS.md files in the parent-directory hierarchy of the atn command itself at: $atn_script_path
 - any AGENTS.md files in parent directories of $input_file, if present,
 - and any AGENTS.md files in the current working directory hierarchy, if they are also relevant.
@@ -216,7 +221,7 @@ Then read the ATN specification document at: $input_file
 Work in this order:
 1. Print exactly: PROGRESS: reading ATN documentation
 2. Read the ATN repository documentation you need.
-3. Read all applicable AGENTS.md files for the atn command hierarchy, the input file hierarchy, and any other relevant active hierarchy before translating.
+3. Read all applicable AGENTS.md files for the Design activity, the atn command hierarchy, the input file hierarchy, and any other relevant active hierarchy before translating.
 4. Print exactly: PROGRESS: reading specification from $input_file
 5. Read the ATN specification document at $input_file.
 6. Identify the specified constraints, types, constants, relations, and assertions that must shape design.
@@ -230,6 +235,7 @@ Work in this order:
 Rules:
 - Stay faithful to the input ATN specification.
 - Use the specification as the primary input to design.
+- Follow applicable AGENTS.md instructions, especially the Design activity instructions and any more specific source-local instructions.
 - Produce ATN output in Markdown code fences, consistent with the ATN documentation and examples.
 - Make assumptions explicit only when the specification leaves implementation-relevant structure ambiguous.
 - Write the final document to $output_file instead of printing it.
