@@ -4,4 +4,4 @@ Using ATN to refine ATN specifications into implementable architectures, interfa
 
 ATN specifications are primary inputs to this activity.
 
-This activity can be part of the Architecture workflow and the Assurance workflow.
+This activity can be part of the Engineering workflow and the Assurance workflow.

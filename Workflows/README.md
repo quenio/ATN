@@ -8,7 +8,7 @@ The workflow names and activity groupings below are aligned with common systems 
 - DoD Systems Engineering Guidebook
 - SEBoK guidance on applying life cycle processes
 
-## [Architecture](./Architecture)
+## [Engineering](./Engineering)
 
 A workflow for refining specifications into implementable structures and building from them.
 
