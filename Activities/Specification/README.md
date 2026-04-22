@@ -16,17 +16,9 @@ Specification uses ATN in two ways within the [Assurance workflow](../../Workflo
 - [`../../Examples/Processes/DocumentApproval`](../../Examples/Processes/DocumentApproval): a small `atn spec` example and test based on a short natural-language requirements document for a document approval workflow.
 - [`../../Examples/Protocols/ModelContextProtocol`](../../Examples/Protocols/ModelContextProtocol): a larger `atn spec` example and test based on the Model Context Protocol specification, including a local source copy and a generated ATN version under [`Examples/Protocols`](../../Examples/Protocols).
 
-## Tests: `atn spec`
+## Tooling
 
-This folder includes two `atn spec` exercises:
-
-- [`../../Examples/Processes/DocumentApproval`](../../Examples/Processes/DocumentApproval): a small end-to-end test based on a short natural-language requirements document for a document approval workflow.
-- [`../../Examples/Protocols/ModelContextProtocol`](../../Examples/Protocols/ModelContextProtocol): a larger end-to-end stress test based on the Model Context Protocol specification.
-
-Their purpose is to verify that the command can:
-- read a Markdown requirements document,
-- extract its core requirements,
-- and produce a faithful ATN specification in Markdown.
+- `./atn spec <markdown_file.md>` generates `<markdown_file.spec.md>` from a Markdown requirements document.
 
 ## Sources
 
