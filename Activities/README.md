@@ -56,7 +56,7 @@ Using ATN to synthesize coherent models and specifications from multiple concept
 
 Using ATN specifications and designs to derive and organize tests.
 
-## Proposed workflows
+## Proposed Workflows
 
 ### Constraint Formulation Workflow
 
