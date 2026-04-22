@@ -2,6 +2,22 @@
 
 A workflow for defining intended action, exploring scenarios, executing under constraints, and observing outcomes.
 
+The name Operations is used because the main outcome of this workflow is effective action in a live or anticipated operating context. In common systems engineering and life-cycle terminology, operations covers planning what is to be done, evaluating possible scenarios, executing under constraints, observing actual behavior, and feeding what is learned back into future action.
+
+## Why This Workflow Uses These Activities
+
+This workflow uses these activities because each one supports a necessary part of operational work:
+
+- [Planning](../../Activities/Planning) defines goals, constraints, sequencing, and admissible actions before execution.
+- [Simulation](../../Activities/Simulation) explores scenarios, failure cases, and projected outcomes before or alongside live action.
+- [Governance](../../Activities/Governance) establishes policies, authorities, limits, and decision rules under which operations proceed.
+- [Implementation](../../Activities/Implementation) carries plans into actual execution or operational change.
+- [Monitoring](../../Activities/Monitoring) observes behavior, events, state changes, and deviations during execution.
+- [Analysis](../../Activities/Analysis) interprets observations, identifies causes and implications, and informs correction or replanning.
+- [Documentation](../../Activities/Documentation) records plans, decisions, observations, and lessons for coordination and reuse.
+
+Together these activities form an operations-oriented path because they center on acting within an environment, observing consequences, and adapting future action accordingly.
+
 ## Activities
 
 - [Planning](../../Activities/Planning)
@@ -12,7 +28,7 @@ A workflow for defining intended action, exploring scenarios, executing under co
 - [Analysis](../../Activities/Analysis)
 - [Documentation](../../Activities/Documentation)
 
-These activities are grouped because common systems engineering and operations guidance show a recurring operational loop of planning, scenario exploration, execution, observation, assessment, and documentation.
+These activities are grouped because common systems engineering and operations guidance show a recurring operational loop of planning, scenario exploration, governed execution, observation, assessment, and documentation, with feedback into future operations.
 
 ## Activity Flow
 

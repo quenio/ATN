@@ -2,6 +2,22 @@
 
 A workflow for refining specifications into implementable structures and building from them.
 
+The name Architecture is used because the main outcome of this workflow is an organized solution structure: components, interfaces, allocations, responsibilities, and governing design choices that make implementation possible. In common systems engineering terminology, this corresponds to architecture design and design solution definition, followed by realization-oriented work that turns those structures into implemented and integrated artifacts.
+
+## Why This Workflow Uses These Activities
+
+This workflow uses these activities because each one is needed to turn required behavior into a realizable structure:
+
+- [Specification](../../Activities/Specification) provides the constraints and intended behaviors that the architecture must satisfy.
+- [Design](../../Activities/Design) refines those constraints into implementable structures, interfaces, responsibilities, and patterns.
+- [Interoperability](../../Activities/Interoperability) ensures the architecture defines workable interfaces, protocols, schemas, and shared meanings across parts of the system.
+- [Governance](../../Activities/Governance) establishes the rules, controls, and design decisions that keep implementation aligned with architectural intent.
+- [Implementation](../../Activities/Implementation) realizes the architecture in concrete artifacts.
+- [Testing](../../Activities/Testing) checks that the implemented structure behaves as intended and that design assumptions hold in practice.
+- [Documentation](../../Activities/Documentation) records architectural decisions, interfaces, constraints, and implementation-relevant guidance.
+
+Together these activities form an architecture-oriented path because they are centered on defining and realizing system structure rather than only stating requirements or only observing operations.
+
 ## Activities
 
 - [Specification](../../Activities/Specification)
@@ -12,7 +28,7 @@ A workflow for refining specifications into implementable structures and buildin
 - [Testing](../../Activities/Testing)
 - [Documentation](../../Activities/Documentation)
 
-These activities are grouped because common systems engineering sources show that architecture and design refine specifications into implementable components and interfaces, while implementation, testing, and documentation carry that structure into realized products.
+These activities are grouped because common systems engineering sources show that architecture design sits between requirements and realization, refining specifications into components, interfaces, and governing structures, then carrying those structures through implementation, testing, and documentation.
 
 ## Activity Flow
 

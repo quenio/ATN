@@ -2,6 +2,22 @@
 
 A workflow for checking consistency between intent, realization, and observed behavior.
 
+The name Assurance is used because the main outcome of this workflow is justified confidence that a system satisfies its intended constraints in design, implementation, and operation. In common engineering usage, assurance is broader than testing alone: it includes verification, validation, assessment of observed behavior, governance of acceptable evidence, and documentation of findings and decisions.
+
+## Why This Workflow Uses These Activities
+
+This workflow uses these activities because each one contributes evidence or control needed for assurance:
+
+- [Specification](../../Activities/Specification) defines the intended constraints and behaviors against which assurance judgments are made.
+- [Design](../../Activities/Design) provides the structure whose adequacy and correctness must be assessed.
+- [Testing](../../Activities/Testing) produces direct evidence about whether implemented behavior matches intended behavior.
+- [Monitoring](../../Activities/Monitoring) provides evidence from actual or simulated operation, including deviations and emergent issues not captured in planned tests alone.
+- [Analysis](../../Activities/Analysis) interprets test results, observations, anomalies, and residual risk.
+- [Governance](../../Activities/Governance) defines criteria, controls, decision rights, and acceptance thresholds for assurance claims.
+- [Documentation](../../Activities/Documentation) records evidence, findings, decisions, and traceability needed to justify confidence over time.
+
+Together these activities form an assurance-oriented path because they are organized around producing and evaluating evidence that intent, realization, and observed behavior remain aligned.
+
 ## Activities
 
 - [Specification](../../Activities/Specification)
@@ -12,7 +28,7 @@ A workflow for checking consistency between intent, realization, and observed be
 - [Governance](../../Activities/Governance)
 - [Documentation](../../Activities/Documentation)
 
-These activities are grouped because common systems engineering guidance shows assurance as the cross-checking of specifications, realized designs, tests, and operational observations under explicit governance and documentation.
+These activities are grouped because common systems engineering guidance shows assurance as the cross-checking of intended constraints, realized designs, test evidence, and operational observations under explicit governance and documentation.
 
 ## Activity Flow
 
