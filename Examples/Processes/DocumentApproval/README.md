@@ -11,7 +11,7 @@ It starts from a short natural-language requirements document for a document app
 
 ## Activity Links
 
-- [`Activities/Specification`](../../../Activities/Specification): refers to this folder as a small `atn spec` example and test.
+- [Specification](../../../Activities/Specification): refers to this folder as a small `atn spec` example and test.
 
 ## Purpose
 
