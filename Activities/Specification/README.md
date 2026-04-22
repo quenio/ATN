@@ -2,7 +2,7 @@
 
 Using ATN to specify required constraints, behaviors and invariants that serve as primary inputs to design and testing.
 
-This activity can be part of the Requirements workflow, the Engineering workflow, and the Assurance workflow.
+This activity can be part of the Assurance workflow, the Engineering workflow, and the Requirements workflow.
 
 ## [ModelContextProtocol](./ModelContextProtocol)
 

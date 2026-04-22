@@ -2,13 +2,13 @@
 
 Using ATN to organize related activities into repeatable paths of work.
 
-## [Engineering](./Engineering)
-
-A workflow for refining specifications into implementable structures and building from them.
-
 ## [Assurance](./Assurance)
 
 A workflow for checking consistency between intent, realization, and observed behavior.
+
+## [Engineering](./Engineering)
+
+A workflow for refining specifications into implementable structures and building from them.
 
 ## [Operations](./Operations)
 
