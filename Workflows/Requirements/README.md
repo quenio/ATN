@@ -1,4 +1,4 @@
-# ATN Workflow: Specification
+# ATN Workflow: Requirements
 
 A workflow for turning domain understanding into precise, testable constraints.
 
@@ -10,7 +10,7 @@ A workflow for turning domain understanding into precise, testable constraints.
 - [Specification](../../Activities/Specification)
 - [Documentation](../../Activities/Documentation)
 
-These activities are grouped because common systems engineering sources consistently show that domain understanding, synthesis, and analysis feed the definition of requirements and specifications, with documentation capturing the resulting artifacts.
+These activities are grouped because common systems engineering sources consistently show that domain understanding, synthesis, and analysis feed the definition of requirements, with documentation capturing the resulting artifacts.
 
 ## Activity Flow
 
@@ -24,7 +24,7 @@ flowchart LR
 
 ## Sources
 
-This workflow name is corroborated by common systems engineering usage in which specification and requirements definition are recognized life-cycle activities preceding design and implementation.
+This workflow name is corroborated by common systems engineering usage in which requirements definition is recognized as a life-cycle activity preceding design and implementation.
 
 Representative sources include:
 

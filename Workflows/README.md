@@ -20,6 +20,6 @@ A workflow for checking consistency between intent, realization, and observed be
 
 A workflow for defining intended action, exploring scenarios, executing under constraints, and observing outcomes.
 
-## [Specification](./Specification)
+## [Requirements](./Requirements)
 
 A workflow for turning domain understanding into precise, testable constraints.
