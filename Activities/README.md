@@ -2,6 +2,8 @@
 
 Using ATN to support modeling, analysis, specification, design, implementation and related work.
 
+## Activities
+
 ## [Analysis](./Analysis)
 
 Using ATN to analyze implications, consistency, completeness and alternatives.
@@ -53,3 +55,51 @@ Using ATN to synthesize coherent models and specifications from multiple concept
 ## [Testing](./Testing)
 
 Using ATN specifications and designs to derive and organize tests.
+
+## Proposed workflows
+
+### Specification workflow
+
+A workflow for turning domain understanding into precise, testable constraints.
+
+- [Modeling](./Modeling)
+- [Synthesis](./Synthesis)
+- [Analysis](./Analysis)
+- [Specification](./Specification)
+- [Documentation](./Documentation)
+
+### Design and implementation workflow
+
+A workflow for refining specifications into implementable structures and building from them.
+
+- [Specification](./Specification)
+- [Design](./Design)
+- [Interoperability](./Interoperability)
+- [Governance](./Governance)
+- [Implementation](./Implementation)
+- [Testing](./Testing)
+- [Documentation](./Documentation)
+
+### Planning and execution workflow
+
+A workflow for defining intended action, exploring scenarios, executing under constraints and observing outcomes.
+
+- [Planning](./Planning)
+- [Simulation](./Simulation)
+- [Governance](./Governance)
+- [Implementation](./Implementation)
+- [Monitoring](./Monitoring)
+- [Analysis](./Analysis)
+- [Documentation](./Documentation)
+
+### Assurance workflow
+
+A workflow for checking consistency between intent, realization and observed behavior.
+
+- [Specification](./Specification)
+- [Design](./Design)
+- [Testing](./Testing)
+- [Monitoring](./Monitoring)
+- [Analysis](./Analysis)
+- [Governance](./Governance)
+- [Documentation](./Documentation)

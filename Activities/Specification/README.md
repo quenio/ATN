@@ -2,6 +2,8 @@
 
 Using ATN to specify required constraints, behaviors and invariants that serve as primary inputs to design and testing.
 
+This activity can be part of the Specification workflow, the Design and implementation workflow, and the Assurance workflow.
+
 ## [ModelContextProtocol](./ModelContextProtocol)
 
 A larger `atn spec` example and test based on the Model Context Protocol specification, including a local source copy and a generated ATN version.
