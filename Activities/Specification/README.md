@@ -11,14 +11,14 @@ Specification uses ATN in two ways within the [Assurance workflow](../../Workflo
 - as input, by using ATN concepts, models, and source requirements to define required constraints, behaviors, and invariants precisely
 - as output, by contributing ATN specifications that serve as primary inputs to downstream activities including Design and Testing
 
+## Tooling
+
+- `./atn spec <markdown_file.md>` generates `<markdown_file.spec.md>` from a Markdown requirements document.
+
 ## Examples
 
 - [`../../Examples/Processes/DocumentApproval`](../../Examples/Processes/DocumentApproval): a small `atn spec` example and test based on a short natural-language requirements document for a document approval workflow.
 - [`../../Examples/Protocols/ModelContextProtocol`](../../Examples/Protocols/ModelContextProtocol): a larger `atn spec` example and test based on the Model Context Protocol specification, including a local source copy and a generated ATN version under [`Examples/Protocols`](../../Examples/Protocols).
-
-## Tooling
-
-- `./atn spec <markdown_file.md>` generates `<markdown_file.spec.md>` from a Markdown requirements document.
 
 ## Sources
 
