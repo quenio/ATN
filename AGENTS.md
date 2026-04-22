@@ -11,5 +11,5 @@ After making changes to the repository, commit them and push them to `origin mai
 - Follow the repository's existing directory and README conventions.
 - When adding a new directory, include a `README.md` when appropriate and link it from the parent index when that matches surrounding structure.
 - Keep changes consistent with the style and organization already present in the repo.
-- Follow title style conventions: use capitalized noun phrases; prepositions and conjunctions may be lowercase; avoid articles; code/data symbols should preserve original casing between backticks.
+- Follow title style conventions: use capitalized noun phrases; prepositions and conjunctions may be lowercase; avoid articles and determiners; code/data symbols should preserve original casing between backticks.
 - List workflows in alphabetical order wherever they are enumerated in the repository.
