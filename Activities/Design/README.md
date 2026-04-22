@@ -8,7 +8,7 @@ This activity can be part of the Assurance workflow and the Engineering workflow
 
 ## ATN Use in Design
 
-Design uses ATN in two ways within the Engineering workflow:
+Design uses ATN in two ways within the [Engineering workflow](../../Workflows/Engineering):
 
 - as input, by using ATN specifications to define the constraints and intended behavior that design must refine into implementable structures
 - as output, by contributing architectures, interfaces, responsibilities, and related design decisions that support downstream ATN activities including Interoperability, Governance, Implementation, Testing, and Documentation
