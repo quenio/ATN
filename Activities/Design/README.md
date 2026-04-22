@@ -6,6 +6,13 @@ ATN specifications are primary inputs to this activity.
 
 This activity can be part of the Assurance workflow and the Engineering workflow.
 
+## ATN Use in Design
+
+Design uses ATN in two ways within the [Engineering workflow](../../Workflows/Engineering):
+
+- as input, by using ATN specifications to define the constraints and intended behavior that design must refine into implementable structures
+- as output, by contributing architectures, interfaces, responsibilities, and related design decisions that support downstream ATN activities including Interoperability, Governance, Implementation, Testing, and Documentation
+
 ## Tooling
 
 - `./atn design <markdown_file.spec.md>` generates `<markdown_file.design.md>` from an ATN specification.
@@ -13,13 +20,6 @@ This activity can be part of the Assurance workflow and the Engineering workflow
 ## Examples
 
 - [`../../Examples/Protocols/ModelContextProtocol`](../../Examples/Protocols/ModelContextProtocol): a larger cross-activity example that can be used as input to `./atn design` after running `./atn spec`.
-
-## ATN Use in Design
-
-Design uses ATN in two ways within the [Engineering workflow](../../Workflows/Engineering):
-
-- as input, by using ATN specifications to define the constraints and intended behavior that design must refine into implementable structures
-- as output, by contributing architectures, interfaces, responsibilities, and related design decisions that support downstream ATN activities including Interoperability, Governance, Implementation, Testing, and Documentation
 
 ## Sources
 
