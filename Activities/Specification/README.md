@@ -1,6 +1,6 @@
 # ATN Activities: Specification
 
-Using ATN to specify required constraints, behaviors and invariants.
+Using ATN to specify required constraints, behaviors and invariants that serve as primary inputs to design and testing.
 
 ## [ModelContextProtocol](./ModelContextProtocol)
 

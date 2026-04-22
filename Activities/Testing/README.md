@@ -1,3 +1,3 @@
 # ATN Activities: Testing
 
-Using ATN to derive and organize tests from specifications.
+Using ATN specifications and designs to derive and organize tests.
