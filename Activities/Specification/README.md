@@ -19,3 +19,11 @@ Their purpose is to verify that the command can:
 - read a Markdown requirements document,
 - extract its core requirements,
 - and produce a faithful ATN specification in Markdown.
+
+## Sources
+
+Representative sources include:
+
+- [NASA Systems Engineering Handbook](https://www.nasa.gov/wp-content/uploads/2018/09/nasa_systems_engineering_handbook_0.pdf), which identifies `Technical Requirements Definition Process` as a distinct activity feeding later design and realization.
+- [DoD Systems Engineering Guidebook](https://www.cto.mil/wp-content/uploads/2024/05/SE-Guidebook-Feb2022.pdf), which identifies `Stakeholder Requirements Definition Process` and `Requirements Analysis Process` as core technical processes.
+- [SEBoK: Applying Life Cycle Processes](https://sebokwiki.org/wiki/Applying_Life_Cycle_Processes), which discusses stakeholder needs, concept definition, and `system requirements definition` as linked life-cycle processes.
