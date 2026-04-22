@@ -2,6 +2,8 @@
 
 A workflow for turning domain understanding into precise, testable constraints.
 
+## Sources
+
 This workflow name is corroborated by common systems engineering usage in which specification and requirements definition are recognized life-cycle activities preceding design and implementation.
 
 Representative sources include:

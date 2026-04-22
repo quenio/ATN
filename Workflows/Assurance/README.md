@@ -2,6 +2,8 @@
 
 A workflow for checking consistency between intent, realization, and observed behavior.
 
+## Sources
+
 This workflow name is corroborated by common engineering usage in which assurance covers verification, validation, technical assessment, risk, compliance, and governance concerns across the life cycle.
 
 Representative sources include:

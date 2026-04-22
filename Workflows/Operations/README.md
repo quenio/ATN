@@ -2,6 +2,8 @@
 
 A workflow for defining intended action, exploring scenarios, executing under constraints, and observing outcomes.
 
+## Sources
+
 This workflow name is corroborated by common life-cycle usage in which planning, simulation, execution, monitoring, and operational support form an operations-oriented thread.
 
 Representative sources include:

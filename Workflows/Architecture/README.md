@@ -2,6 +2,8 @@
 
 A workflow for refining specifications into implementable structures and building from them.
 
+## Sources
+
 This workflow name is corroborated by common systems engineering usage in which architecture and design solution definition sit between requirements/specification and implementation/integration.
 
 Representative sources include:
