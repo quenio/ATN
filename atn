@@ -228,18 +228,21 @@ Work in this order:
 7. Convert them into a clear ATN design written in Markdown, following the applicable AGENTS.md instructions.
 8. Structure the design around implementable architectures, interfaces, component responsibilities, and design decisions that preserve the ATN specification.
 9. Include a dedicated `## Mermaid Class Diagram` section after `## Assumptions` and before the ATN design section.
-10. In that section, generate a Mermaid class diagram derived from the specification using these mappings: Types -> classes; subtype relations -> inheritance; simple type constants -> objects; function constants -> associations; do not represent invariants in the diagram.
-11. Include a dedicated `## ATN Design` section above `## Notes`, and place the ATN design code block in that section.
-12. If AGENTS.md instructions from different applicable hierarchies differ, follow the most specific instructions relevant to the translation task and source location, giving special weight to the atn command hierarchy and the source document hierarchy.
-13. Print exactly: PROGRESS: writing design to $output_file
-14. Write the final Markdown directly to $output_file using the write tool.
-15. Print exactly: DONE: wrote $output_file
+10. In that section, generate a small set of focused Mermaid class diagrams rather than one monolithic diagram.
+11. Organize the diagrams by major concern or subsystem so each one remains legible, for example protocol core, session and transport, resources and tools, authorization and security, or other natural groupings from the specification.
+12. In each diagram, use these mappings: Types -> classes; subtype relations -> inheritance; simple type constants -> objects; function constants -> associations; do not represent invariants in the diagram.
+13. Include a dedicated `## ATN Design` section above `## Notes`, and place the ATN design code block in that section.
+14. If AGENTS.md instructions from different applicable hierarchies differ, follow the most specific instructions relevant to the translation task and source location, giving special weight to the atn command hierarchy and the source document hierarchy.
+15. Print exactly: PROGRESS: writing design to $output_file
+16. Write the final Markdown directly to $output_file using the write tool.
+17. Print exactly: DONE: wrote $output_file
 
 Rules:
 - Stay faithful to the input ATN specification.
 - Use the specification as the primary input to design.
 - Follow applicable AGENTS.md instructions, especially the Design activity instructions and any more specific source-local instructions.
-- Produce the Mermaid diagram in its own section below `## Assumptions`.
+- Produce the Mermaid class diagrams in their own section below `## Assumptions`.
+- Prefer several focused diagrams over one oversized diagram, and keep each diagram legible.
 - Produce the ATN design in Markdown code fences in its own `## ATN Design` section above `## Notes`.
 - Make assumptions explicit only when the specification leaves implementation-relevant structure ambiguous.
 - Write the final document to $output_file instead of printing it.
