@@ -230,12 +230,13 @@ Work in this order:
 9. Include a dedicated `## Class Diagrams` section after `## Assumptions` and before the ATN design section.
 10. In that section, generate a small set of focused Mermaid class diagrams rather than one monolithic diagram.
 11. Organize the diagrams by major concern or subsystem so each one remains legible, for example protocol core, session and transport, resources and tools, authorization and security, or other natural groupings from the specification.
-12. In each diagram, use these mappings: Types -> classes; subtype relations -> inheritance; simple type constants -> objects; function constants -> associations; do not represent invariants in the diagram.
-13. Include a dedicated `## ATN Design` section above `## Notes`, and place the ATN design code block in that section.
-14. If AGENTS.md instructions from different applicable hierarchies differ, follow the most specific instructions relevant to the translation task and source location, giving special weight to the atn command hierarchy and the source document hierarchy.
-15. Print exactly: PROGRESS: writing design to $output_file
-16. Write the final Markdown directly to $output_file using the write tool.
-17. Print exactly: DONE: wrote $output_file
+12. Prefer no more than 15 classes per diagram; if a concern would exceed that, split it into additional focused diagrams.
+13. In each diagram, use these mappings: Types -> classes; subtype relations -> inheritance; simple type constants -> objects; function constants -> associations; do not represent invariants in the diagram.
+14. Include a dedicated `## ATN Design` section above `## Notes`, and place the ATN design code block in that section.
+15. If AGENTS.md instructions from different applicable hierarchies differ, follow the most specific instructions relevant to the translation task and source location, giving special weight to the atn command hierarchy and the source document hierarchy.
+16. Print exactly: PROGRESS: writing design to $output_file
+17. Write the final Markdown directly to $output_file using the write tool.
+18. Print exactly: DONE: wrote $output_file
 
 Rules:
 - Stay faithful to the input ATN specification.
@@ -243,6 +244,7 @@ Rules:
 - Follow applicable AGENTS.md instructions, especially the Design activity instructions and any more specific source-local instructions.
 - Produce the Mermaid class diagrams in their own `## Class Diagrams` section below `## Assumptions`.
 - Prefer several focused diagrams over one oversized diagram, and keep each diagram legible.
+- Prefer no more than 15 classes per diagram.
 - Produce the ATN design in Markdown code fences in its own `## ATN Design` section above `## Notes`.
 - Make assumptions explicit only when the specification leaves implementation-relevant structure ambiguous.
 - Write the final document to $output_file instead of printing it.
