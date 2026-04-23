@@ -227,7 +227,7 @@ Work in this order:
 6. Identify the specified constraints, types, constants, relations, and assertions that must shape design.
 7. Convert them into a clear ATN design written in Markdown, following the applicable AGENTS.md instructions.
 8. Structure the design around implementable architectures, interfaces, component responsibilities, and design decisions that preserve the ATN specification.
-9. Include a dedicated `## Mermaid Class Diagram` section after `## Assumptions` and before the ATN design section.
+9. Include a dedicated `## Class Diagrams` section after `## Assumptions` and before the ATN design section.
 10. In that section, generate a small set of focused Mermaid class diagrams rather than one monolithic diagram.
 11. Organize the diagrams by major concern or subsystem so each one remains legible, for example protocol core, session and transport, resources and tools, authorization and security, or other natural groupings from the specification.
 12. In each diagram, use these mappings: Types -> classes; subtype relations -> inheritance; simple type constants -> objects; function constants -> associations; do not represent invariants in the diagram.
@@ -241,7 +241,7 @@ Rules:
 - Stay faithful to the input ATN specification.
 - Use the specification as the primary input to design.
 - Follow applicable AGENTS.md instructions, especially the Design activity instructions and any more specific source-local instructions.
-- Produce the Mermaid class diagrams in their own section below `## Assumptions`.
+- Produce the Mermaid class diagrams in their own `## Class Diagrams` section below `## Assumptions`.
 - Prefer several focused diagrams over one oversized diagram, and keep each diagram legible.
 - Produce the ATN design in Markdown code fences in its own `## ATN Design` section above `## Notes`.
 - Make assumptions explicit only when the specification leaves implementation-relevant structure ambiguous.
